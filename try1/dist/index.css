@@ -10,43 +10,91 @@ header {
 header .logo {
   width: 30%;
   height: 100px;
-  background-color: aqua;
   padding-top: 35px;
   box-sizing: border-box;
   margin-left: 30px;
 }
 header .Contact-Us {
-  width: 120px;
-  height: 100px;
-  background-color: #56beff;
-  padding-top: 35px;
+  width: 200px;
+  height: 70px;
+  padding-top: 25px;
   box-sizing: border-box;
+  border-style: solid;
+  margin-right: 20px;
 }
 header .customers-recommend {
-  width: 120px;
-  height: 100px;
-  background-color: #fb94ff;
-  padding-top: 35px;
+  width: 200px;
+  height: 70px;
+  padding-top: 25px;
   box-sizing: border-box;
+  border-style: solid;
+  margin-right: 20px;
 }
 header .Information-and-tips {
-  width: 120px;
-  height: 100px;
-  background-color: #c3fa45;
-  padding-top: 35px;
+  width: 200px;
+  height: 70px;
+  padding-top: 25px;
   box-sizing: border-box;
+  border-style: solid;
+  margin-right: 20px;
 }
 header .about {
-  width: 120px;
-  height: 100px;
-  background-color: #4ffb71;
-  padding-top: 35px;
+  width: 200px;
+  height: 70px;
+  padding-top: 25px;
   box-sizing: border-box;
+  border-style: solid;
+  margin-right: 20px;
 }
 header .main {
-  width: 120px;
-  height: 100px;
-  background-color: #fb4f63;
-  padding-top: 35px;
+  width: 200px;
+  height: 70px;
+  padding-top: 25px;
   box-sizing: border-box;
+  border-style: solid;
+  margin-right: 20px;
+}
+
+h1 {
+  margin-left: 35%;
+  font-size: 3.2rem;
+}
+
+.list-num2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.list-num2 .money-need {
+  width: 200px;
+  height: 80px;
+  /* background-color: #29f22c; */
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border-style: solid;
+  justify-content: center;
+}
+.list-num2 .much-month {
+  width: 200px;
+  height: 80px;
+  /* background-color: #29f22c; */
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border-style: solid;
+  text-align: center;
+  justify-content: center;
+}
+.list-num2 .get-loan {
+  width: 200px;
+  height: 80px;
+  /* background-color: #29f22c; */
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border-style: solid;
+  justify-content: center;
 }
