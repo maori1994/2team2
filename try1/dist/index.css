@@ -17,57 +17,79 @@ header .logo {
 header .Contact-Us {
   width: 200px;
   height: 70px;
-  padding-top: 25px;
+  background-color: white;
+  /* padding-top: 25px; */
   box-sizing: border-box;
+  display: flex;
   border-style: solid;
+  justify-content: center;
   margin-right: 20px;
+  align-items: center;
 }
 header .customers-recommend {
+  background-color: white;
   width: 200px;
   height: 70px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   box-sizing: border-box;
+  display: flex;
   border-style: solid;
+  justify-content: center;
   margin-right: 20px;
+  align-items: center;
 }
 header .Information-and-tips {
+  background-color: white;
   width: 200px;
   height: 70px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   box-sizing: border-box;
+  display: flex;
   border-style: solid;
+  justify-content: center;
   margin-right: 20px;
+  align-items: center;
 }
 header .about {
+  background-color: white;
   width: 200px;
   height: 70px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   box-sizing: border-box;
+  display: flex;
   border-style: solid;
+  justify-content: center;
   margin-right: 20px;
+  align-items: center;
 }
 header .main {
+  background-color: white;
   width: 200px;
   height: 70px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   box-sizing: border-box;
+  display: flex;
   border-style: solid;
+  justify-content: center;
   margin-right: 20px;
+  align-items: center;
 }
 
-h1 {
+.background-list-2 {
+  background-color: #6abefd;
+}
+.background-list-2 h1 {
   margin-left: 35%;
   font-size: 3.2rem;
 }
-
-.list-num2 {
+.background-list-2 .list-num2 {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.list-num2 .money-need {
+.background-list-2 .list-num2 .money-need {
   width: 200px;
   height: 80px;
   /* background-color: #29f22c; */
@@ -76,8 +98,10 @@ h1 {
   border-radius: 15px;
   border-style: solid;
   justify-content: center;
+  background-color: white;
 }
-.list-num2 .much-month {
+.background-list-2 .list-num2 .much-month {
+  background-color: white;
   width: 200px;
   height: 80px;
   /* background-color: #29f22c; */
@@ -88,7 +112,8 @@ h1 {
   text-align: center;
   justify-content: center;
 }
-.list-num2 .get-loan {
+.background-list-2 .list-num2 .get-loan {
+  background-color: white;
   width: 200px;
   height: 80px;
   /* background-color: #29f22c; */

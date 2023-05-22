@@ -3,6 +3,7 @@ header{
   width:100%;
   height: 100px;
   background-color: silver;
+  // background-color: rgba(20, 63, 57, 0.383);
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -19,84 +20,109 @@ header{
   .Contact-Us{
     width: 200px;
     height: 70px;
-    padding-top: 25px;
+    background-color: white;
+    /* padding-top: 25px; */
     box-sizing: border-box;
+    display: flex;
     border-style: solid;
+    justify-content: center;
     margin-right: 20px;
+    align-items: center;
   }
   .customers-recommend{
+    background-color: white;
     width: 200px;
     height: 70px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     box-sizing: border-box;
+    display: flex;
     border-style: solid;
+    justify-content: center;
     margin-right: 20px;
+    align-items: center;
   }
   .Information-and-tips{
+    background-color: white;
     width: 200px;
     height: 70px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     box-sizing: border-box;
+    display: flex;
     border-style: solid;
+    justify-content: center;
     margin-right: 20px;
-    }
+    align-items: center;}
   .about{
+    background-color: white;
     width: 200px;
     height: 70px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     box-sizing: border-box;
+    display: flex;
     border-style: solid;
+    justify-content: center;
     margin-right: 20px;
+    align-items: center;
   }
   .main{
+    background-color: white;
     width: 200px;
     height: 70px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     box-sizing: border-box;
+    display: flex;
     border-style: solid;
+    justify-content: center;
     margin-right: 20px;
+    align-items: center;
   }
 }
-
-h1{
-  margin-left: 35%;
-  font-size: 3.2rem;
-}
-.list-num2{
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  .money-need{
-    width: 200px;
-    height: 80px;
-    /* background-color: #29f22c; */
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    border-style: solid;
-    justify-content: center;
+.background-list-2{
+  background-color: rgb(106, 190, 253);
+  // height: 300px;
+    h1{
+    margin-left: 35%;
+    font-size: 3.2rem;
   }
-  .much-month{
-    width: 200px;
-    height: 80px;
-    /* background-color: #29f22c; */
+  .list-num2{
+    width: 100%;
+    height: 300px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 15px;
-    border-style: solid;
-    text-align: center;
-    justify-content: center;
-  }
-  .get-loan{
-    width: 200px;
-    height: 80px;
-    /* background-color: #29f22c; */
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    border-style: solid;
-    justify-content: center;
+    .money-need{
+      width: 200px;
+      height: 80px;
+      /* background-color: #29f22c; */
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      border-style: solid;
+      justify-content: center;
+      background-color: white;
+    }
+    .much-month{
+      background-color: white;
+      width: 200px;
+      height: 80px;
+      /* background-color: #29f22c; */
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      border-style: solid;
+      text-align: center;
+      justify-content: center;
+    }
+    .get-loan{
+      background-color: white;
+      width: 200px;
+      height: 80px;
+      /* background-color: #29f22c; */
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      border-style: solid;
+      justify-content: center;
+    }
   }
 }
