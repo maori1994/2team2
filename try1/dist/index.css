@@ -1,69 +1,51 @@
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100px;
   background-color: silver;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
-
 header .logo {
   width: 120px;
   height: 100px;
   background-color: aqua;
   padding-top: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 header .Contact-Us {
   width: 120px;
   height: 100px;
   background-color: #56beff;
   padding-top: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 header .customers-recommend {
   width: 120px;
   height: 100px;
   background-color: #fb94ff;
   padding-top: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 header .Information-and-tips {
   width: 120px;
   height: 100px;
   background-color: #c3fa45;
   padding-top: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 header .about {
   width: 120px;
   height: 100px;
   background-color: #4ffb71;
   padding-top: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 header .main {
   width: 120px;
   height: 100px;
   background-color: #fb4f63;
   padding-top: 35px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-/*# sourceMappingURL=index.css.map */
