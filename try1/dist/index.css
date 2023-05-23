@@ -146,3 +146,32 @@ header .main {
   font-size: 1.5rem;
   border-radius: 50px;
 }
+
+.UserProfile {
+  margin-top: 2%;
+  margin-left: 75%;
+}
+
+.nameUser {
+  margin-left: 75%;
+}
+
+.lastName {
+  margin-left: 75%;
+}
+
+.phoneNumber {
+  margin-left: 75%;
+}
+
+.email {
+  margin-left: 75%;
+}
+
+.submitOfForm2 {
+  margin-left: 43%;
+  width: 270px;
+  height: 69px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}

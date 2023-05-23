@@ -1,12 +1,13 @@
 //---model---//
-class sendingDataClass{
+class sendingDataCalculationsClass{
     uid:string;
-    constructor(public moneyNeed:string,public manyMonths:string){
+    constructor(public moneyNeed:string,
+        public manyMonths:string){
         this.uid=uid()
     }
 }
 
-let saveDateArray:sendingDataClass[]=[]
+let saveDateArray:sendingDataCalculationsClass[]=[]
 //---model---//
 
 
@@ -16,8 +17,9 @@ function getDateForm(evt){
         evt.preventDefault()
         let moneyNeed=evt.target.elements.moneyNeed.value;
         let manyMonths=evt.target.elements.manyMonths.value;
-        saveDateArray.push(new sendingDataClass(moneyNeed,manyMonths))
-        console.log(saveDateArray)                
+        saveDateArray.push(new sendingDataCalculationsClass(moneyNeed,manyMonths))
+        // console.log(saveDateArray)   
+        renderDate.innerHTML= renderToItems(saveDateArray)             
     } catch (error) {
         console.log(error)
     }
@@ -25,29 +27,49 @@ function getDateForm(evt){
 
 
 
-function renderToItems(saveDateArray:sendingDataClass[]){
+function renderToItems(saveDateArray:sendingDataCalculationsClass[]):string{
     try {
         if(!saveDateArray || !Array.isArray(saveDateArray))throw new Error("this items is not good")
         
-        let htmls=saveDateArray.map((UserData)=> {
+        let html=saveDateArray
+        .map((userCalculations)=> {
             return `<div>
-            <div>${UserData.moneyNeed}</div>
-            <div>${UserData.manyMonths}</div>
-            </div>`
+            <div>${userCalculations.moneyNeed}</div>
+            <div>${userCalculations.manyMonths}</div>
+            <div><button onclick="deleteItemscalculations('${userCalculations.uid}')">remove</button></div>
+            </div>
+            `;
         })
-
-
-
-
-        
+        .join(" ");
+        // console.log(html)
+        return html;
     } catch (error) {
         console.log(error)
         return `this `
     }
 }
 
-
+function deleteItemscalculations(uid:string){
+try {
+    let index=saveDateArray.findIndex((items)=>items.uid===uid);
+    if(index=== -1)throw new Error("we are have Error");
+    saveDateArray.splice(index,1)
+    renderDate.innerHTML= renderToItems(saveDateArray);
+} catch (error) {
+    console.log(error)
+}
+}
 //---controller---//
+
+
+
+
+//---view---//
+let renderDate=document.querySelector(".renderDate")as HTMLDivElement;
+// console.log(renderDate)
+//---view---//
+
+
 
 
 
@@ -56,3 +78,48 @@ function uid():string{
     return `id-${Math.random()}`
 }
 //--helper--//
+
+
+
+
+
+
+
+
+
+
+
+// ---- user information--//
+
+class userInformationClass{
+    uid:string
+    constructor(public UserProfile:string,
+        public nameUser:string,
+        public lastName:string,
+        public phoneNumbe:string,
+        public email:string){
+        this.uid=uid()
+    }
+} 
+
+let userInformationArray:userInformationClass[]=[]
+
+function getUserInformation(ev){
+ev.prevetDefault()
+
+// console.log(ev)
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
