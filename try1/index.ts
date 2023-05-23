@@ -105,13 +105,38 @@ class userInformationClass{
 let userInformationArray:userInformationClass[]=[]
 
 function getUserInformation(ev){
-ev.prevetDefault()
+    try {
+        ev.preventDefault()
+        let UserProfile=ev.target.elements.UserProfile.value;
+        let nameUser=ev.target.elements.nameUser.value;
+        let lastName=ev.target.elements.lastName.value;
+        let phoneNumber=ev.target.elements.phoneNumber.value;
+        let email=ev.target.elements.email.value
+        userInformationArray.push(new userInformationClass(UserProfile,nameUser,lastName,phoneNumber,email))
+        renderInformation.innerHTML=renderToUserInformation(userInformationArray)
+    } catch (error) {
+        console.log(error)
+    }
 
-// console.log(ev)
+// console.log(UserProfile,nameUser,lastName,phoneNumber,email)
 } 
 
+function renderToUserInformation(userInformationArray:userInformationClass[]):string{
+    let htmlOfInformation=userInformationArray.map((userInformation)=>{
+        return `<div>
+        <div>${userInformation.UserProfile}</div>
+        <div>${userInformation.nameUser}</div>
+        <div>${userInformation.lastName}</div>
+        <div>${userInformation.phoneNumbe}</div>
+        <div>${userInformation.email}</div>
+        </div>
+        `;
 
+    }).join(" ")
+    return htmlOfInformation   
+}
 
+let renderInformation=document.querySelector(".renderInformation")as HTMLDivElement;
 
 
 
