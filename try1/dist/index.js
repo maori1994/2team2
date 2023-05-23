@@ -76,6 +76,25 @@ var userInformationClass = /** @class */ (function () {
 }());
 var userInformationArray = [];
 function getUserInformation(ev) {
-    ev.prevetDefault();
-    // console.log(ev)
+    try {
+        ev.preventDefault();
+        var UserProfile = ev.target.elements.UserProfile.value;
+        var nameUser = ev.target.elements.nameUser.value;
+        var lastName = ev.target.elements.lastName.value;
+        var phoneNumber = ev.target.elements.phoneNumber.value;
+        var email = ev.target.elements.email.value;
+        userInformationArray.push(new userInformationClass(UserProfile, nameUser, lastName, phoneNumber, email));
+        renderInformation.innerHTML = renderToUserInformation(userInformationArray);
+    }
+    catch (error) {
+        console.log(error);
+    }
+    // console.log(UserProfile,nameUser,lastName,phoneNumber,email)
 }
+function renderToUserInformation(userInformationArray) {
+    var htmlOfInformation = userInformationArray.map(function (userInformation) {
+        return "<div>\n        <div>" + userInformation.UserProfile + "</div>\n        <div>" + userInformation.nameUser + "</div>\n        <div>" + userInformation.lastName + "</div>\n        <div>" + userInformation.phoneNumbe + "</div>\n        <div>" + userInformation.email + "</div>\n        </div>\n        ";
+    }).join(" ");
+    return htmlOfInformation;
+}
+var renderInformation = document.querySelector(".renderInformation");
