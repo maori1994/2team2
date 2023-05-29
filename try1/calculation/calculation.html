@@ -7,18 +7,21 @@
     <script src="./dist/calculation.js" defer></script>
     <title>Document</title>
   </head>
-  <body>
+  <body onload="renderToScrrim()">
     <form onsubmit="getDateForm(event)">
       <input class="moneyNeed" type="text" name="moneyNeed" />
       <label for="moneyNeed">?כמה כסף אתה צריך</label>
       <br />
       <br />
       <input class="manyMonths" type="text" name="manyMonths" />
-      <label for="manyMonths">?לכמה חודשים</label>
+      <label for="manyMonths">?לכמה שנים</label>
       <br />
       <br />
       <input class="submit" type="submit" value="שלח פריטים כאן " />
     </form>
     <div class="renderDate"></div>
+
+    <!-- <div id="amla"></div> -->
+    <!-- <div id="returnMoney"></div> -->
   </body>
 </html>
