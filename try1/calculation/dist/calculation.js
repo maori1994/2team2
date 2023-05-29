@@ -53,15 +53,8 @@ function getDateForm(evt) {
         }
         saveDateArray = getLocalStorage();
         saveDateArray.push(new SendingDataCalculationsClass(moneyNeed, manyMonths, total, amla, returnMoney));
-        // console.log(saveDateArray)
-        // let monthsToYears = manyMonths * 12;
-        // console.log(`tis ${monthsToYears}`)
         saveToLocalStorage(saveDateArray);
-        // getLocalStorage(saveDateArray)  
-        // getLocalStorage()
-        // renderToScrrim()
         renderToItems(saveDateArray);
-        // renderDate.innerHTML = renderToItems(saveDateArray);
     }
     catch (error) {
         console.log(error);
@@ -71,16 +64,12 @@ function renderToItems(saveDateArray) {
     try {
         if (!saveDateArray || !Array.isArray(saveDateArray))
             throw new Error("this items is not good");
-        //if(saveDateArray.lenght == 0) {
-        //  return `No data here`
-        //}
         var html = saveDateArray
             .map(function (userCalculations) {
             return "<div>\n            <div>Amount need: " + userCalculations.moneyNeed + "</div>\n            <div>Amount of Months" + userCalculations.manyMonths + "</div>\n            <div>Total:" + userCalculations.total + "</div>\n            <div>Amla: " + userCalculations.amla + "</div>\n            <div>Return Money: " + userCalculations.returnMoney + "</div>\n            <div><button onclick=\"deleteItemscalculations('" + userCalculations.uid + "')\">remove</button></div>\n            </div>\n            ";
         })
             .join(" ");
         renderDate.innerHTML = html;
-        // console.log(html)
         return html;
     }
     catch (error) {
@@ -89,9 +78,6 @@ function renderToItems(saveDateArray) {
     }
 }
 function renderToScrrim() {
-    // saveToLocalStorage(saveDateArray)
-    //  getLocalStorage()
-    // renderToItems(saveDateArray)
     var data = getLocalStorage();
     renderDate.innerHTML = renderToItems(data);
 }
@@ -150,7 +136,7 @@ function saveToLocalStorage(saveDateArray) {
 function getLocalStorage() {
     // console.log(saveDateArray)
     var data = localStorage.getItem("items");
-    console.log("datasssss", data);
+    // console.log("datasssss",data)
     if (data == null) {
         return [];
     }

@@ -59,16 +59,9 @@ function getDateForm(evt) {
    
     saveDateArray = getLocalStorage()
     saveDateArray.push(new SendingDataCalculationsClass(moneyNeed,manyMonths,total, amla, returnMoney));
-    // console.log(saveDateArray)
-    // let monthsToYears = manyMonths * 12;
-    // console.log(`tis ${monthsToYears}`)
     saveToLocalStorage(saveDateArray)
-    // getLocalStorage(saveDateArray)  
-    // getLocalStorage()
-    // renderToScrrim()
     renderToItems(saveDateArray)
-   // renderDate.innerHTML = renderToItems(saveDateArray);
-  } catch (error) {
+   } catch (error) {
     console.log(error);
   }
 }
@@ -77,10 +70,6 @@ function renderToItems(saveDateArray: SendingDataCalculationsClass[]): string {
   try {
     if (!saveDateArray || !Array.isArray(saveDateArray))
       throw new Error("this items is not good");
-
-      //if(saveDateArray.lenght == 0) {
-      //  return `No data here`
-      //}
     let html = saveDateArray
       .map((userCalculations) => {
         return `<div>
@@ -94,8 +83,7 @@ function renderToItems(saveDateArray: SendingDataCalculationsClass[]): string {
             `;
       })
       .join(" ");
-      renderDate.innerHTML = html
-    // console.log(html)
+    renderDate.innerHTML = html
     return html;
   } catch (error) {
     console.log(error);
@@ -103,12 +91,8 @@ function renderToItems(saveDateArray: SendingDataCalculationsClass[]): string {
   }
 }
 function renderToScrrim(){
-  // saveToLocalStorage(saveDateArray)
-  //  getLocalStorage()
-  // renderToItems(saveDateArray)
   const data = getLocalStorage() 
-  renderDate.innerHTML = renderToItems(data);
-  
+  renderDate.innerHTML = renderToItems(data);  
 }
 
 function deleteItemscalculations(uid: string) {
@@ -169,7 +153,7 @@ try {
 function getLocalStorage():saveDateArray[] {
   // console.log(saveDateArray)
   let data : string | null = localStorage.getItem("items")
-  console.log("datasssss",data)
+  // console.log("datasssss",data)
 
   if(data == null) {
     return []
