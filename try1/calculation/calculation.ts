@@ -14,7 +14,7 @@ class SendingDataCalculationsClass {
 let saveDateArray: SendingDataCalculationsClass[] = [];
 //---model---//
 
-
+let a=document.querySelector(".ro")as HTMLDivElement;
 //---controller---//
 function getDateForm(evt) {
   try {
@@ -35,7 +35,7 @@ function getDateForm(evt) {
       console.log("5k");
       amla +=total //amla = amla + totals
       //returnMoney.innerHTML = "<h3>You need: 5k</h3>"
-
+      a.innerHTML=`<div>dasda</div>`
     } else if (moneyNeed <= 10000) {
       console.log("10k");
       amla = 5

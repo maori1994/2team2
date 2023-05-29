@@ -12,6 +12,7 @@ var SendingDataCalculationsClass = /** @class */ (function () {
 }());
 var saveDateArray = [];
 //---model---//
+var a = document.querySelector(".ro");
 //---controller---//
 function getDateForm(evt) {
     try {
@@ -28,6 +29,7 @@ function getDateForm(evt) {
             console.log("5k");
             amla += total; //amla = amla + totals
             //returnMoney.innerHTML = "<h3>You need: 5k</h3>"
+            a.innerHTML = "<div>dasda</div>";
         }
         else if (moneyNeed <= 10000) {
             console.log("10k");
