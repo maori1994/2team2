@@ -120,7 +120,7 @@ function uid(): string {
 }
 //--helper--//
 // let h1=Number(prompt("years"))
-  
+    
 //   let test=h1*12
 //   console.log(test)
   // let action=prompt("choos")
