@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./dist/calculation.js" defer></script>
+    <link rel="stylesheet" href="./dist/calculation.css">
     <title>Document</title>
   </head>
   <body onload="renderToScrrim()">
+    <header>
+      <div class="logo">
+        <img src="../photo/LOGO-Y.R.M.png" alt="logo website - GRAY MARKET" />
+      </div>
+      <div class="Contact-Us">צור קשר</div>
+      <div class="customers-recommend">לקוחות ממליצים</div>
+      <div class="Information-and-tips">מידע וטיפים</div>
+      <div class="about">אודות</div>
+      <div class="main">ראשי</div>
+    </header>
+
+    <div class="background-list-2">
+      <h1>GRAY MARKET</h1>
+      <div class="list-num2">
+        <div class="get-loan">בחר מהיכן לקבל את הלוואה</div>
+        <div class="much-month">?לכמה חודשים</div>
+        <div class="money-need">?כמה כסף אתה צריך</div>
+      </div>
+    </div>
     <form onsubmit="getDateForm(event)">
       <input class="moneyNeed" type="text" name="moneyNeed" />
       <label for="moneyNeed">?כמה כסף אתה צריך</label>
@@ -20,8 +40,60 @@
       <input class="submit" type="submit" value="שלח פריטים כאן" />
     </form>
     <div class="renderDate"></div>
-    <div class="ro"></div>
-    <!-- <div id="amla"></div> -->
-    <!-- <div id="returnMoney"></div> -->
+
+    <div class="bankYahv"></div>
+    <div class="laomi"></div>
+    <div class="discud"></div>
+    <div class="egud"></div>
+    <div class="international"></div>
+    <div class="israelPost"></div>
+    <div class="mercantile"></div>
+
+
+
+
+
+
+
+
+
+
+    <!-- form number 1 -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form onsubmit="getUserInformation(event)">
+      <input class="UserProfile" type="text" name="UserProfile">
+      <label for="UserProfile">פרופיל משתמש</label>
+      <br>
+      <br>
+
+      <input class="nameUser" type="text" name="nameUser">
+      <label for="nameUser">שם פרטי</label>
+      <br>
+      <br>
+
+      <input class="lastName" type="text" name="lastName">
+      <label for="lastName">שם משפחה</label>
+      <br>
+      <br>
+
+      <input class="phoneNumber" type="text" name="phoneNumber">
+      <label for="phoneNumber">מספר פלאפון</label>  
+      <br>
+      <br>
+
+      <input class="email" type="text" name="email">
+      <label for="email">אימייל</label>
+      <br>
+      <br>
+      <br>
+      
+      <input class="submitOfForm2" type="submit" value="שליחת פריטים אישים ">
+    </form>
+    <div class="renderInformation"></div>
   </body>
 </html>

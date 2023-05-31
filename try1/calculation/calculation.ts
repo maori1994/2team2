@@ -3,62 +3,112 @@ class SendingDataCalculationsClass {
   uid: string;
   constructor(
     public moneyNeed: number, 
-    public manyMonths: number,
-    public total:number,
-    public amla:number,
-    public returnMoney:number){
+    public amountOfYears: number,
+    public total:number,){
     this.uid = uid();
   }
-}
-
+} 
 let saveDateArray: SendingDataCalculationsClass[] = [];
 //---model---//
 
-let a=document.querySelector(".ro")as HTMLDivElement;
+let bankYahv=document.querySelector(".bankYahv")as HTMLDivElement;
+let laomi=document.querySelector(".laomi")as HTMLDivElement;
+let discud=document.querySelector(".discud")as HTMLDivElement;
+let egud=document.querySelector(".egud")as HTMLDivElement;
+let international=document.querySelector(".international")as HTMLDivElement;
+let israelPost=document.querySelector(".israelPost")as HTMLDivElement;
+let mercantil=document.querySelector(".mercantile")as HTMLDivElement;
 //---controller---//
 function getDateForm(evt) {
   try {
     evt.preventDefault();
     let moneyNeed = evt.target.elements.moneyNeed.value;
     let manyMonths = evt.target.elements.manyMonths.value;
-    // let total = evt.target.elements.manyMonths.value;
     let manyMONthsMultiplay=manyMonths*12
     let total=moneyNeed/manyMONthsMultiplay
-
-    // console.log(`this is your total ${total}`)
     
-    
-    let amla: number = 0
-    let returnMoney: number = 0
-
-    if (moneyNeed <= 5000) {      // monthsToYears
-      console.log("5k");
-      amla +=total //amla = amla + totals
-      //returnMoney.innerHTML = "<h3>You need: 5k</h3>"
-      a.innerHTML=`<div>dasda</div>`
-    } else if (moneyNeed <= 10000) {
-      console.log("10k");
-      amla = 5
-      //returnMoney.innerHTML = "<h3>You need: 10K</h3>"
-    } else {
-      console.log("baziga!");
-      amla = 100
-      //returnMoney.innerHTML = "<h3>You need: 100k</h3>"
+    if (moneyNeed <= 500000) {
+      bankYahv.innerHTML=`<div class="bankYahav">
+        <div><h3>בנק המומלץ</h3></div>
+        <div><img src="../photo/yahav.png" alt="logoOfImg"></div>
+        <div class="numberBankYahav">מספר הבנק: 4</div>
+        <div class="contactYahav">*2505 :פלאפון ליצירת קשר </div>
+        <div class="beforeInterest">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="afterInterest">סכום התשלום כולל ריבית: ${total*1.7}</div>
+        </div>
+      `}
+     else if (moneyNeed <= 750000) {
+      laomi.innerHTML=`<div class="bankLeumi">  
+        <div><h3>בנק המומלץ</h3></div>
+        <div><img src="../photo/leumi.png" alt="logoOfImg"></div>
+        <div class="numberbBankLeumi">מספר בנק: 10</div>
+        <div class="contactLeumi">*5522 :פלאפון ליצירת קשר </div>
+        <div class="beforeInterestLeumi">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="afterInterestLeumi">סכום התשלום כולל ריבית: ${total*1.6}</div>
+        </div>
+      `
+     
+    }else if(moneyNeed <=1000000){
+      discud.innerHTML=`<div class="bankEgud>
+        <div><h3>בנק המומלץ</h3></div>
+        <div><img src="../photo/diskont.jpg" alt="logoOfImg"></div>
+        <div class="numberBankEgud">מספר בנק: 11</div>
+        <div class="contactEgud"> *6111 :פלאפון ליצירת קשר</div>
+        <div class="beforeInterestEgud">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="afterInterestEgud">סכום התשלום כולל ריבית: ${total*1.5}</div>
+        </div>
+      `
+    } 
+    else if(moneyNeed <=1250000){
+      egud.innerHTML=`
+        <div><h3>בנק המומלץ</h3></div>
+        <div><img src="../photo/egud.jpg" alt="logoOfImg"></div>
+        <div>מספר בנק: 10</div>
+        <div>*5522 :פלאפון ליצירת קשר</div>
+        <div>סכום התשלום לפני ריבית: ${total}</div>
+        <div>סכום התשלום כולל ריבית: ${total*1.4}</div>
+      `
     }
-
-    if (manyMonths <= 5) {
-      console.log("time jukjsa");
-      returnMoney = moneyNeed/5
-    } else if (manyMonths <= 10) {
-      returnMoney = moneyNeed/10
-      console.log("76");
-    } else {
-      console.log("name is 23123 ");
-      returnMoney = moneyNeed/15
+    else if(moneyNeed <=1500000){
+      egud.innerHTML=`
+        <div><h3>בנק המומלץ</h3></div>
+        <div><img src="../photo/hapoalim.jpg" alt="logoOfImg"></div>
+        <div>בנק הפועלים</div>
+        <div>מספר בנק: 11</div>
+        <div>*2407 :פלאפון ליצירת קשר</div>
+        <div>סכום התשלום לפני ריבית: ${total}</div>
+        <div>סכום התשלום כולל ריבית: ${total*1.3}</div>
+      `
+    }
+    
+    else if(moneyNeed <=1750000){
+      israelPost.innerHTML=`
+        <div><h3>בנק המומלץ </h3></div>
+        <div><img src="../photo/israelpost.png" alt="logoOfImg"></div>
+        <div>דואר ישראל</div>
+        <div>מספר בנק: 12</div>
+        <div>*2401 :פלאפון ליצירת קשר</div>
+        <div>סכום התשלום לפני ריבית: ${total}</div>
+        <div>סכום התשלום כולל ריבית: ${total*1.2}</div>
+      `
     }
    
-    saveDateArray = getLocalStorage()
-    saveDateArray.push(new SendingDataCalculationsClass(moneyNeed,manyMonths,total, amla, returnMoney));
+    else if(moneyNeed <=2000000){
+      mercantil.innerHTML=`
+        <div><h3>בנק המומלץ </h3></div>
+        <div><img src="../photo/mercantile.jpg" alt="logoOfImg"></div>
+        <div>בנק מרכנתיל</div>
+        <div>מספר בנק: 13</div>
+        <div> *3477 :פלאפון ליצירת קשר</div>
+        <div>סכום התשלום לפני ריבית: ${total}</div>
+        <div>סכום התשלום כולל ריבית: ${total*1.1}</div>
+      `
+    }
+    else {
+      return alert("המספר שרשמת לא תקין");
+    }
+   saveDateArray = getLocalStorage()
+    saveDateArray.push(new SendingDataCalculationsClass(moneyNeed,manyMonths,total));
     saveToLocalStorage(saveDateArray)
     renderToItems(saveDateArray)
    } catch (error) {
@@ -72,13 +122,11 @@ function renderToItems(saveDateArray: SendingDataCalculationsClass[]): string {
       throw new Error("this items is not good");
     let html = saveDateArray
       .map((userCalculations) => {
-        return `<div>
-            <div>Amount need: ${userCalculations.moneyNeed}</div>
-            <div>Amount of Months${userCalculations.manyMonths}</div>
-            <div>Total:${userCalculations.total}</div>
-            <div>Amla: ${userCalculations.amla}</div>
-            <div>Return Money: ${userCalculations.returnMoney}</div>
-            <div><button onclick="deleteItemscalculations('${userCalculations.uid}')">remove</button></div>
+        return `<div class="LoanInformation">
+            <div class="amountOfMoney"> סכום הכסף שביקשת : ${userCalculations.moneyNeed}</div>
+            <div class="amoumtOfYears"> מספר השנים : ${userCalculations.amountOfYears}</div>
+            <div class="refundAmount">סכום ההחזר לפי חודש: ${userCalculations.total}</div>
+            <div><button class="buttonDelete" onclick="deleteItemscalculations('${userCalculations.uid}')">מחיקת נתונים</button></div>
             </div>
             `;
       })
@@ -100,18 +148,25 @@ function deleteItemscalculations(uid: string) {
     let index = saveDateArray.findIndex((items) => items.uid === uid);
     if (index === -1) throw new Error("we are have Error");
     saveDateArray.splice(index, 1);
-    // add save to local storage function
+    laomi.innerHTML=""
+    bankYahv.innerHTML=""
+    discud.innerHTML=""
+    egud.innerHTML=""
+    international.innerHTML=""
+    israelPost.innerHTML=""
+    mercantil.innerHTML=""
     renderToScrrim() 
   } catch (error) {
     console.log(error);
   }
   renderToItems(saveDateArray)
+  saveToLocalStorage(saveDateArray)
+  
 }
 //---controller---//
 
 //---view---//
 let renderDate = document.querySelector(".renderDate") as HTMLDivElement;
-// console.log(renderDate)
 //---view---//
 
 //--helper--//
@@ -119,61 +174,79 @@ function uid(): string {
   return `id-${Math.random()}`;
 }
 //--helper--//
-// let h1=Number(prompt("years"))
-    
-//   let test=h1*12
-//   console.log(test)
-  // let action=prompt("choos")
-// function test(h1:number,h2:number,action:string|null){
-  
-//   if(action==="*"){
-//     console.log(h1*h2)
-//   }else if(action==="/"){
-//     console.log(h1/h2)
-//   }else{
-//     console.log("this is no ")
-//   }
-// }
-// test(h1,h2,action)
 
 function saveToLocalStorage(saveDateArray:SendingDataCalculationsClass[]){
-try {
-  // console.log(saveDateArray)
-  // if(!saveDateArray){
+  try {
     localStorage.setItem("items",JSON.stringify(saveDateArray));
-  // }else{
-    // console.log("")
-    // throw new Error("thihs is not good");
-  // }
-} catch (error) {
-  console.log(error);
-}
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function getLocalStorage():saveDateArray[] {
-  // console.log(saveDateArray)
+function getLocalStorage():SendingDataCalculationsClass[] {
   let data : string | null = localStorage.getItem("items")
-  // console.log("datasssss",data)
-
   if(data == null) {
     return []
   }
-
   let parse=JSON.parse(data)
   console.log("JSON.parse",parse)
-
-
   return parse;
 
-  // console.log(parse)
-  // console.log("rrrrrrrrrR",d     ate)
 }
 
-//getLocalStorage()
 
 
-// const _items=getLocalStorage()
-// if(_items){
-//   saveDateArray.push(..._items)
-// }
-// renderDate(saveDateArray)
+
+
+
+
+
+
+// ---- user information--//
+
+class userInformationClass{
+  uid:string
+  constructor(public UserProfile:string,
+      public nameUser:string,
+      public lastName:string,
+      public phoneNumbe:string,
+      public email:string){
+      this.uid=uid()
+  }
+} 
+
+let userInformationArray:userInformationClass[]=[]
+
+function getUserInformation(ev){
+  try {
+      ev.preventDefault()
+      let UserProfile=ev.target.elements.UserProfile.value;
+      let nameUser=ev.target.elements.nameUser.value;
+      let lastName=ev.target.elements.lastName.value;
+      let phoneNumber=ev.target.elements.phoneNumber.value;
+      let email=ev.target.elements.email.value
+      userInformationArray.push(new userInformationClass(UserProfile,nameUser,lastName,phoneNumber,email))
+      renderInformation.innerHTML=renderToUserInformation(userInformationArray)
+  } catch (error) {
+      console.log(error)
+  }
+
+// console.log(UserProfile,nameUser,lastName,phoneNumber,email)
+} 
+
+function renderToUserInformation(userInformationArray:userInformationClass[]):string{
+  let htmlOfInformation=userInformationArray.map((userInformation)=>{
+      return `<div>
+      <div>${userInformation.UserProfile}</div>
+      <div>${userInformation.nameUser}</div>
+      <div>${userInformation.lastName}</div>
+      <div>${userInformation.phoneNumbe}</div>
+      <div>${userInformation.email}</div>
+      </div>
+      `;
+
+  }).join(" ")
+  return htmlOfInformation   
+}
+
+let renderInformation=document.querySelector(".renderInformation")as HTMLDivElement;
