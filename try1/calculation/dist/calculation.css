@@ -191,6 +191,7 @@ header .main {
   width: 48rem;
   height: 13rem;
   font-family: sans-serif;
+  border-style: solid;
 }
 .LoanInformation .amountOfMoney {
   padding-left: 230px;
