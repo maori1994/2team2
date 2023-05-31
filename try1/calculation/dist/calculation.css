@@ -186,36 +186,39 @@ header .main {
   justify-content: center;
   text-align: center;
   margin-top: 8%;
-  margin-left: 240px;
+  margin-left: 355px;
   font-size: 1.5rem;
+  border-style: solid;
+  border-radius: 58px;
+  border-width: 3px;
   width: 48rem;
   height: 13rem;
   font-family: sans-serif;
-  border-style: solid;
+  background-color: silver;
 }
-.LoanInformation .amountOfMoney {
-  padding-left: 230px;
+.LoanInformation__amountOfMoney {
+  color: white;
 }
-.LoanInformation .amoumtOfYears {
-  padding-left: 40%;
+.LoanInformation__amoumtOfYears {
+  color: white;
 }
-.LoanInformation .refundAmount {
-  padding-left: 32%;
+.LoanInformation__refundAmount {
+  color: white;
 }
-.LoanInformation .buttonDelete {
-  margin-left: 43%;
+.LoanInformation__buttonDelete {
   font-size: 1.2rem;
   border-radius: 30px;
   width: 20%;
   height: 40px;
-  margin-left: 35%;
 }
 
 .bankYahav {
   width: 800px;
   height: 400px;
-  background-color: aqua;
-  margin-left: 24%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 21%;
 }
 .bankYahav h3 {
   padding-left: 40%;
@@ -226,32 +229,30 @@ header .main {
   height: 14rem;
   padding-left: 25%;
 }
-.bankYahav .numberBankYahav {
-  background-color: #ff1de5;
+.bankYahav__numberBankYahav {
   font-size: x-large;
-  padding-left: 40%;
+  padding-left: 13%;
 }
-.bankYahav .contactYahav {
-  background-color: #4c83f9;
+.bankYahav__contactYahav {
   font-size: x-large;
-  padding-left: 33%;
+  padding-left: 13%;
 }
-.bankYahav .beforeInterest {
-  background-color: #53ff9e;
+.bankYahav__beforeInterest {
   font-size: x-large;
-  padding-left: 165px;
+  padding-left: 120px;
 }
-.bankYahav .afterInterest {
-  background-color: bisque;
+.bankYahav__afterInterest {
   font-size: x-large;
-  padding-left: 175px;
+  padding-left: 117px;
 }
 
 .bankLeumi {
   width: 800px;
   height: 400px;
-  background-color: aqua;
-  margin-left: 24%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 21%;
 }
 .bankLeumi h3 {
   padding-left: 40%;
@@ -260,63 +261,162 @@ header .main {
 .bankLeumi img {
   width: 58%;
   height: 8rem;
-  padding-left: 20%;
+  padding-left: 13%;
   border-radius: 15px;
 }
-.bankLeumi .numberbBankLeumi {
-  background-color: #ff1de5;
+.bankLeumi__numberbBankLeumi {
   font-size: x-large;
-  padding-left: 40%;
+  padding-left: 13%;
 }
-.bankLeumi .contactLeumi {
-  background-color: #4c83f9;
+.bankLeumi__contactLeumi {
   font-size: x-large;
-  padding-left: 33%;
+  padding-left: 13%;
 }
-.bankLeumi .beforeInterestLeumi {
-  background-color: #53ff9e;
+.bankLeumi__beforeInterestLeumi {
   font-size: x-large;
-  padding-left: 165px;
+  padding-left: 120px;
 }
-.bankLeumi .afterInterestLeumi {
-  background-color: bisque;
+.bankLeumi__afterInterestLeumi {
   font-size: x-large;
-  padding-left: 175px;
+  padding-left: 110px;
 }
 
-.bankEgud {
+.bankDiscud {
   width: 800px;
   height: 400px;
-  background-color: aqua;
-  margin-left: 24%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 21%;
 }
-.bankEgud h3 {
+.bankDiscud h3 {
   padding-left: 40%;
   font-size: xx-large;
 }
-.bankEgud img {
-  width: 58%;
-  height: 8rem;
-  padding-left: 20%;
+.bankDiscud img {
+  width: 350px;
+  height: 300px;
+  padding-left: 13%;
   border-radius: 15px;
 }
-.bankEgud .numberBankEgud {
-  background-color: #ff1de5;
+.bankDiscud__numberBankDiscud {
   font-size: x-large;
+  padding-left: 13%;
+}
+.bankDiscud__contactDiscud {
+  font-size: x-large;
+  padding-left: 13%;
+}
+.bankDiscud__beforeInterestDiscud {
+  font-size: x-large;
+  padding-left: 120px;
+}
+.bankDiscud__afterInterestDiscud {
+  font-size: x-large;
+  padding-left: 110px;
+}
+
+.bankhapoalim {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 21%;
+}
+.bankhapoalim h3 {
   padding-left: 40%;
+  font-size: xx-large;
 }
-.bankEgud .contactEgud {
-  background-color: #4c83f9;
-  font-size: x-large;
-  padding-left: 33%;
+.bankhapoalim img {
+  width: 350px;
+  height: 300px;
+  padding-left: 13%;
+  border-radius: 15px;
 }
-.bankEgud .beforeInterestEgud {
-  background-color: #53ff9e;
+.bankhapoalim__numberbankbankhapoalim {
   font-size: x-large;
-  padding-left: 165px;
+  padding-left: 13%;
 }
-.bankEgud .afterInterestEgud {
-  background-color: bisque;
+.bankhapoalim__contactbankhapoalim {
   font-size: x-large;
-  padding-left: 175px;
+  padding-left: 13%;
+}
+.bankhapoalim__beforeInteresthapoalim {
+  font-size: x-large;
+  padding-left: 120px;
+}
+.bankhapoalim__afterInteresthapoalim {
+  font-size: x-large;
+  padding-left: 110px;
+}
+
+.bankIsraelPost {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 21%;
+}
+.bankIsraelPost h3 {
+  padding-left: 40%;
+  font-size: xx-large;
+}
+.bankIsraelPost img {
+  width: 350px;
+  height: 300px;
+  padding-left: 13%;
+  border-radius: 15px;
+}
+.bankIsraelPost__numberbankIsraelPost {
+  font-size: x-large;
+  padding-left: 13%;
+}
+.bankIsraelPost__contactbankIsraelPost {
+  font-size: x-large;
+  padding-left: 13%;
+}
+.bankIsraelPost__beforeInterestIsraelPost {
+  font-size: x-large;
+  padding-left: 120px;
+}
+.bankIsraelPost__afterInterestIsraelPost {
+  font-size: x-large;
+  padding-left: 110px;
+}
+
+.bankmercantil {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 21%;
+}
+.bankmercantil h3 {
+  padding-left: 40%;
+  font-size: xx-large;
+}
+.bankmercantil img {
+  width: 350px;
+  height: 300px;
+  padding-left: 13%;
+  border-radius: 15px;
+}
+.bankmercantil__numberbankmercantil {
+  font-size: x-large;
+  padding-left: 13%;
+}
+.bankmercantil__contactbankmercantil {
+  font-size: x-large;
+  padding-left: 13%;
+}
+.bankmercantil__beforeInterestbankmercantil {
+  font-size: x-large;
+  padding-left: 120px;
+}
+.bankmercantil__afterInterestbankmercantil {
+  font-size: x-large;
+  padding-left: 110px;
 }

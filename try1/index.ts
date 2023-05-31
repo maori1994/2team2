@@ -14,7 +14,7 @@ let saveDateArray: SendingDataCalculationsClass[] = [];
 let bankYahv=document.querySelector(".bankYahv")as HTMLDivElement;
 let laomi=document.querySelector(".laomi")as HTMLDivElement;
 let discud=document.querySelector(".discud")as HTMLDivElement;
-let egud=document.querySelector(".egud")as HTMLDivElement;
+let hapoalim=document.querySelector(".hapoalim")as HTMLDivElement;
 let international=document.querySelector(".international")as HTMLDivElement;
 let israelPost=document.querySelector(".israelPost")as HTMLDivElement;
 let mercantil=document.querySelector(".mercantile")as HTMLDivElement;
@@ -28,81 +28,71 @@ function getDateForm(evt) {
     let total=moneyNeed/manyMONthsMultiplay
     
     if (moneyNeed <= 500000) {
-      bankYahv.innerHTML=`
-        <div><h3>בנק המומלץ</h3></div>
+      bankYahv.innerHTML=`<div class="bankYahav">
         <div><img src="../photo/yahav.png" alt="logoOfImg"></div>
-        <div>מספר הבנק: 4</div>
-        <div>*2505 :פלאפון ליצירת קשר </div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.7}</div>
+        <div class="bankYahav__numberBankYahav">מספר הבנק: 4</div>
+        <div class="bankYahav__contactYahav">*2505 :פלאפון ליצירת קשר </div>
+        <div class="bankYahav__beforeInterest">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="bankYahav__afterInterest">סכום התשלום כולל ריבית: ${total*1.7}</div>
+        </div>
       `}
      else if (moneyNeed <= 750000) {
-      laomi.innerHTML=`
+      laomi.innerHTML=`<div class="bankLeumi">  
         <div><h3>בנק המומלץ</h3></div>
         <div><img src="../photo/leumi.png" alt="logoOfImg"></div>
-        <div>בנק לאומי</div>
-        <div>מספר בנק: 10</div>
-        <div>*5522 :פלאפון ליצירת קשר </div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.6}</div>
+        <div class="bankLeumi__numberbBankLeumi">מספר בנק: 10</div>
+        <div class="bankLeumi__contactLeumi">*5522 :פלאפון ליצירת קשר </div>
+        <div class="bankLeumi__beforeInterestLeumi">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="bankLeumi__afterInterestLeumi">סכום התשלום כולל ריבית: ${total*1.6}</div>
+        </div>
       `
      
-    }else if(moneyNeed <=1000000){
-      discud.innerHTML=`
+    }
+    else if(moneyNeed <= 1000000){
+      discud.innerHTML=`<div class="bankDiscud">
         <div><h3>בנק המומלץ</h3></div>
         <div><img src="../photo/diskont.jpg" alt="logoOfImg"></div>
-        <div>בנק דיסקונט</div>
-        <div>מספר בנק: 11</div>
-        <div> *6111 :פלאפון ליצירת קשר</div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.5}</div>
+        <div class="bankDiscud__numberBankDiscud">מספר בנק: 11</div>
+        <div class="bankDiscud__contactDiscud"> *6111 :פלאפון ליצירת קשר</div>
+        <div class="bankDiscud__beforeInterestDiscud">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="bankDiscud__afterInterestDiscud">סכום התשלום כולל ריבית: ${total*1.5}</div> 
+      </div> 
       `
-    } 
-    else if(moneyNeed <=1250000){
-      egud.innerHTML=`
-        <div><h3>בנק המומלץ</h3></div>
-        <div><img src="../photo/egud.jpg" alt="logoOfImg"></div>
-        <div>בנק אגוד</div>
-        <div>מספר בנק: 10</div>
-        <div>*5522 :פלאפון ליצירת קשר</div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.4}</div>
-      `
-    }
+    }  
     else if(moneyNeed <=1500000){
-      egud.innerHTML=`
+      hapoalim.innerHTML=`<div class="bankhapoalim">
         <div><h3>בנק המומלץ</h3></div>
         <div><img src="../photo/hapoalim.jpg" alt="logoOfImg"></div>
-        <div>בנק הפועלים</div>
-        <div>מספר בנק: 11</div>
-        <div>*2407 :פלאפון ליצירת קשר</div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.3}</div>
-      `
+        <div class="bankhapoalim__numberbankbankhapoalim">מספר בנק: 14</div>
+        <div class="bankhapoalim__contactbankhapoalim">*2407 :פלאפון ליצירת קשר</div>
+        <div class="bankhapoalim__beforeInteresthapoalim">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="bankhapoalim__afterInteresthapoalim">סכום התשלום כולל ריבית: ${total*1.3}</div>
+        </div>
+        `
     }
     
     else if(moneyNeed <=1750000){
-      israelPost.innerHTML=`
+      israelPost.innerHTML=`<div class="bankIsraelPost">
         <div><h3>בנק המומלץ </h3></div>
         <div><img src="../photo/israelpost.png" alt="logoOfImg"></div>
-        <div>דואר ישראל</div>
-        <div>מספר בנק: 12</div>
-        <div>*2401 :פלאפון ליצירת קשר</div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.2}</div>
-      `
+        <div class="bankIsraelPost__numberbankIsraelPost">מספר בנק: 12</div>
+        <div class="bankIsraelPost__contactbankIsraelPost">*2401 :פלאפון ליצירת קשר</div>
+        <div class="bankIsraelPost__beforeInterestIsraelPost">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="bankIsraelPost__afterInterestIsraelPost">סכום התשלום כולל ריבית: ${total*1.2}</div>
+        </div>
+        `
     }
    
     else if(moneyNeed <=2000000){
-      mercantil.innerHTML=`
+      mercantil.innerHTML=`<div class="bankmercantil">
         <div><h3>בנק המומלץ </h3></div>
         <div><img src="../photo/mercantile.jpg" alt="logoOfImg"></div>
-        <div>בנק מרכנתיל</div>
-        <div>מספר בנק: 13</div>
-        <div> *3477 :פלאפון ליצירת קשר</div>
-        <div>סכום התשלום לפני ריבית: ${total}</div>
-        <div>סכום התשלום כולל ריבית: ${total*1.1}</div>
-      `
+        <div class="bankmercantil__numberbankmercantil">מספר בנק: 13</div>
+        <div class="bankmercantil__contactbankmercantil"> *3477 :פלאפון ליצירת קשר</div>
+        <div class="bankmercantil__beforeInterestbankmercantil">סכום התשלום לפני ריבית: ${total}</div>
+        <div class="bankmercantil__afterInterestbankmercantil">סכום התשלום כולל ריבית: ${total*1.1}</div>
+        </div>
+        `
     }
     else {
       return alert("המספר שרשמת לא תקין");
@@ -122,11 +112,11 @@ function renderToItems(saveDateArray: SendingDataCalculationsClass[]): string {
       throw new Error("this items is not good");
     let html = saveDateArray
       .map((userCalculations) => {
-        return `<div>
-            <div> סכום הכסף שביקשת : ${userCalculations.moneyNeed}</div>
-            <div> מספר השנים : ${userCalculations.amountOfYears}</div>
-            <div>סכום ההחזר לפי חודש: ${userCalculations.total}</div>
-            <div><button onclick="deleteItemscalculations('${userCalculations.uid}')">remove</button></div>
+        return `<div class="LoanInformation">
+            <div class="LoanInformation__amountOfMoney"> סכום הכסף שביקשת : ${userCalculations.moneyNeed}</div>
+            <div class="LoanInformation__amoumtOfYears"> מספר השנים : ${userCalculations.amountOfYears}</div>
+            <div class="LoanInformation__refundAmount">סכום ההחזר לפי חודש: ${userCalculations.total}</div>
+            <div><button class="LoanInformation__buttonDelete" onclick="deleteItemscalculations('${userCalculations.uid}')">מחיקת נתונים</button></div>
             </div>
             `;
       })
@@ -151,7 +141,6 @@ function deleteItemscalculations(uid: string) {
     laomi.innerHTML=""
     bankYahv.innerHTML=""
     discud.innerHTML=""
-    egud.innerHTML=""
     international.innerHTML=""
     israelPost.innerHTML=""
     mercantil.innerHTML=""
