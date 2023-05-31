@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-header {
+.title {
   display: flex;
   width: 100%;
   height: 100px;
@@ -11,7 +11,7 @@ header {
   align-items: center;
   text-align: center;
 }
-header .logo {
+.title__logo {
   width: 30%;
   height: 165px;
   padding-top: 35px;
@@ -19,12 +19,12 @@ header .logo {
   margin-left: 40px;
   padding-top: 25px;
 }
-header .logo img {
+.title__logo img {
   width: 193px;
   height: 140px;
   padding-top: -5px;
 }
-header .Contact-Us {
+.title__Contact-Us {
   width: 200px;
   height: 70px;
   background-color: white;
@@ -36,7 +36,7 @@ header .Contact-Us {
   margin-right: 20px;
   align-items: center;
 }
-header .customers-recommend {
+.title__customers-recommend {
   background-color: white;
   width: 200px;
   height: 70px;
@@ -48,7 +48,7 @@ header .customers-recommend {
   margin-right: 20px;
   align-items: center;
 }
-header .Information-and-tips {
+.title__Information-and-tips {
   background-color: white;
   width: 200px;
   height: 70px;
@@ -60,7 +60,7 @@ header .Information-and-tips {
   margin-right: 20px;
   align-items: center;
 }
-header .about {
+.title__about {
   background-color: white;
   width: 200px;
   height: 70px;
@@ -72,7 +72,7 @@ header .about {
   margin-right: 20px;
   align-items: center;
 }
-header .main {
+.title__main {
   background-color: white;
   width: 200px;
   height: 70px;
