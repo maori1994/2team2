@@ -89,9 +89,13 @@ body {
 .background-list-2 {
   background-color: rgb(106, 190, 253);
   // height: 300px;
-  h1 {
+  .heading1 {
     margin-left: 47.188rem;
-    font-size: 51.2px;
+    font-size: 30px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .list-num2 {
     width: 100%;
@@ -189,7 +193,7 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 8%;
-  margin-left: 355px;
+  margin-left: 535px;
   font-size: 1.5rem;
   border-style: solid;
   border-radius: 58px;

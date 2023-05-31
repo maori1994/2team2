@@ -88,9 +88,12 @@ body {
 .background-list-2 {
   background-color: #6abefd;
 }
-.background-list-2 h1 {
+.background-list-2 .heading1 {
   margin-left: 47.188rem;
-  font-size: 51.2px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .background-list-2 .list-num2 {
   width: 100%;
@@ -186,7 +189,7 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 8%;
-  margin-left: 355px;
+  margin-left: 535px;
   font-size: 1.5rem;
   border-style: solid;
   border-radius: 58px;
