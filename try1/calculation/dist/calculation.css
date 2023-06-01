@@ -190,6 +190,16 @@ body {
 .form2 .styleOfInfoUserRender {
   font-size: 20px;
 }
+.form2 .renderNameUser {
+  font-size: 20px;
+}
+.form2 .renderPhoneNumber {
+  font-size: 20px;
+}
+.form2 .renderPhoneEmail {
+  font-size: 20px;
+}
+
 .LoanInformation {
   display: flex;
   flex-direction: column;

@@ -217,7 +217,7 @@ function renderToUserInformation(
   let htmlOfInformation = userInformationArray
     .map((userInformation) => {
       return `<div class="form2">
-      <div class="styleOfInfoUserRender">הפרטים הבאים נשלחו לבנק:</div>
+      <div class="styleOfInfoUserRender">:הפרטים הבאים נשלחו לבנק</div>
       <div class="renderNameUser">${userInformation.nameUser}</div>
       <div class="renderPhoneNumber">${userInformation.phoneNumbe}</div>
       <div class="renderPhoneEmail">${userInformation.email}</div>
