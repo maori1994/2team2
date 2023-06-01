@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: rgba(8, 6, 14, 0.158);
 }
 .title {
   display: flex;
@@ -20,7 +21,7 @@ body {
     padding-top: 25px;
     // border-style: solid;
     img {
-      width: 193px;
+      width: 230px;
       height: 140px;
       padding-top: -5px;
     }
@@ -99,6 +100,7 @@ body {
     // justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 10px;
   }
   .list-num2 {
     width: 100%;
@@ -147,9 +149,11 @@ body {
 .moneyNeed {
   margin-top: 5%;
   margin-left: 75%;
+  border-radius: 10px;
 }
 .manyMonths {
   margin-left: 75%;
+  border-radius: 10px;
 }
 .submit {
   margin-left: 74%;
@@ -164,21 +168,18 @@ body {
 //---forms number 2--//
 // .UserProfile {
 // background-color: aqua;
-.UserProfile {
-  margin-top: 2%;
-  margin-left: 75%;
-}
+
 .nameUser {
   // margin-top: 2%;
   margin-left: 75%;
-}
-.lastName {
-  margin-left: 75%;
+  border-radius: 10px;
 }
 .phoneNumber {
+  border-radius: 10px;
   margin-left: 75%;
 }
 .email {
+  border-radius: 10px;
   margin-left: 75%;
 }
 .submitOfForm2 {
@@ -188,6 +189,20 @@ body {
   font-size: 1.5rem;
   border-radius: 49px;
 }
+//---render form 2---//
+.form2 {
+  background-color: aqua;
+  .styleOfInfoUserRender {
+    font-size: 20px;
+  }
+  .renderNameUser {
+  }
+  .renderPhoneNumber {
+  }
+  .renderPhoneEmail {
+  }
+}
+//---render form 2---//
 // }
 //---forms number 2--//
 //--- forms--//
@@ -366,8 +381,8 @@ body {
 
   img {
     // background-color: aqua;
-    width: 350px;
-    height: 300px;
+    width: 538px;
+    height: 229px;
     padding-left: 13%;
     border-radius: 15px;
   }

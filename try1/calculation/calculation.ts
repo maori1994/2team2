@@ -50,7 +50,7 @@ function getDateForm(evt) {
       `;
     } else if (moneyNeed <= 950000) {
       discud.innerHTML = `<div class="bankDiscud">
-        <div><img src="../photo/diskont-logo.png" alt="logoOfImg"></div>
+        <div><img src="../photo/diskont.png" alt="logoOfImg"></div>
         <div class="bankDiscud__numberBankDiscud">מספר בנק: 11</div>
         <div class="bankDiscud__contactDiscud"> *6111 :ליצירת קשר</div>
         <div class="bankDiscud__afterInterestDiscud">סכום התשלום כולל ריבית: ${
@@ -60,7 +60,7 @@ function getDateForm(evt) {
       `;
     } else if (moneyNeed <= 1300000) {
       hapoalim.innerHTML = `<div class="bankhapoalim">
-        <div><img src="../photo/hapoalim.jpg" alt="logoOfImg"></div>
+        <div><img src="../photo/hapoalim.png" alt="logoOfImg"></div>
         <div class="bankhapoalim__numberbankbankhapoalim">מספר בנק: 14</div>
         <div class="bankhapoalim__contactbankhapoalim">*2407 :ליצירת קשר</div>
         <div class="bankhapoalim__afterInteresthapoalim">סכום התשלום כולל ריבית: ${
@@ -80,7 +80,7 @@ function getDateForm(evt) {
         `;
     } else if (moneyNeed <= 2000000) {
       mercantil.innerHTML = `<div class="bankmercantil">
-        <div><img src="../photo/mercantile.jpg" alt="logoOfImg"></div>
+        <div><img src="../photo/mercantile.png" alt="logoOfImg"></div>
         <div class="bankmercantil__numberbankmercantil">מספר בנק: 13</div>
         <div class="bankmercantil__contactbankmercantil"> *3477 :ליצירת קשר</div>
         <div class="bankmercantil__afterInterestbankmercantil">סכום התשלום כולל ריבית: ${
@@ -184,9 +184,7 @@ function getLocalStorage(): SendingDataCalculationsClass[] {
 class userInformationClass {
   uid: string;
   constructor(
-    public UserProfile: string,
     public nameUser: string,
-    public lastName: string,
     public phoneNumbe: string,
     public email: string
   ) {
@@ -199,19 +197,11 @@ let userInformationArray: userInformationClass[] = [];
 function getUserInformation(ev) {
   try {
     ev.preventDefault();
-    let UserProfile = ev.target.elements.UserProfile.value;
     let nameUser = ev.target.elements.nameUser.value;
-    let lastName = ev.target.elements.lastName.value;
     let phoneNumber = ev.target.elements.phoneNumber.value;
     let email = ev.target.elements.email.value;
     userInformationArray.push(
-      new userInformationClass(
-        UserProfile,
-        nameUser,
-        lastName,
-        phoneNumber,
-        email
-      )
+      new userInformationClass(nameUser, phoneNumber, email)
     );
     renderInformation.innerHTML = renderToUserInformation(userInformationArray);
   } catch (error) {
@@ -227,11 +217,10 @@ function renderToUserInformation(
   let htmlOfInformation = userInformationArray
     .map((userInformation) => {
       return `<div class="form2">
-      <div>${userInformation.UserProfile}</div>
-      <div>${userInformation.nameUser}</div>
-      <div>${userInformation.lastName}</div>
-      <div>${userInformation.phoneNumbe}</div>
-      <div>${userInformation.email}</div>
+      <div class="styleOfInfoUserRender">הפרטים הבאים נשלחו לבנק:</div>
+      <div class="renderNameUser">${userInformation.nameUser}</div>
+      <div class="renderPhoneNumber">${userInformation.phoneNumbe}</div>
+      <div class="renderPhoneEmail">${userInformation.email}</div>
       </div>
       `;
     })
