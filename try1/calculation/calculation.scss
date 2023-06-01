@@ -493,14 +493,37 @@ body {
   background-color: black;
   margin-top: 10px;
 }
-.about {
+.titleAboutParg {
+  position: absolute;
+  top: 125%;
+  left: -6%;
   margin-left: 45%;
   color: black;
-  font-size: 30px;
+  font-size: 23px;
+  h3 {
+    margin-left: 685px;
+  }
+  margin-left: 45%;
+  color: black;
+  // font-size: 30px;
+  p {
+    margin-left: 358px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-content: center;
+  }
 }
-p {
-  margin-left: 358px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-content: center;
+.contactTime {
+  position: absolute;
+  top: 166%;
+  left: -33%;
+  width: 76%;
+  font-size: 23px;
+
+  h3 {
+    padding-left: 67%;
+  }
+  p {
+    padding-left: 550px;
+  }
 }

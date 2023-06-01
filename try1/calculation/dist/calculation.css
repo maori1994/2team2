@@ -446,12 +446,33 @@ body {
   margin-top: 10px;
 }
 
-.about {
+.titleAboutParg {
+  position: absolute;
+  top: 125%;
+  left: -6%;
   margin-left: 45%;
   color: black;
-  font-size: 30px;
+  font-size: 23px;
+  margin-left: 45%;
+  color: black;
+}
+.titleAboutParg h3 {
+  margin-left: 685px;
+}
+.titleAboutParg p {
+  margin-left: 358px;
 }
 
-p {
-  margin-left: 358px;
+.contactTime {
+  position: absolute;
+  top: 166%;
+  left: -33%;
+  width: 76%;
+  font-size: 23px;
+}
+.contactTime h3 {
+  padding-left: 67%;
+}
+.contactTime p {
+  padding-left: 550px;
 }
