@@ -37,6 +37,10 @@ body {
     justify-content: center;
     margin-right: 20px;
     align-items: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
   &__customers-recommend {
     background-color: white;
@@ -557,7 +561,14 @@ body {
 }
 
 
-
+.grayMarketInfoTips{
+  // background-color: aqua;
+  h2{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
 
