@@ -505,8 +505,22 @@ body {
   color: black;
 }
 
-.grayMarketInfoTips h2 {
+h2 {
   font-size: x-large;
   display: flex;
   justify-content: center;
+  color: black;
+}
+
+.grayMarketInfoTips {
+  display: flex;
+  justify-content: space-around;
+}
+.grayMarketInfoTips .rightSide {
+  display: flex;
+  flex-direction: column;
+}
+.grayMarketInfoTips .leftSide {
+  display: flex;
+  flex-direction: column;
 }

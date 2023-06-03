@@ -37,7 +37,7 @@ body {
     justify-content: center;
     margin-right: 20px;
     align-items: center;
-    a{
+    a {
       text-decoration: none;
       color: black;
     }
@@ -524,20 +524,20 @@ body {
   margin-top: 10px;
 }
 
-.titleAboutParg{
+.titleAboutParg {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  &__aboutUs{
+  &__aboutUs {
     font-size: xx-large;
-    color: black;    
+    color: black;
   }
-  &__ContactUs{
+  &__ContactUs {
     font-size: xx-large;
     color: black;
   }
 }
-.phone{
+.phone {
   display: flex;
   justify-content: end;
   // align-items: center;
@@ -545,39 +545,42 @@ body {
   margin-left: 20%;
   margin-top: 20px;
 }
-.contactTime{
+.contactTime {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  &__paragraphPhone{
+  &__paragraphPhone {
     font-size: large;
     color: black;
   }
-  &__paragraphDate{
+  &__paragraphDate {
     font-size: large;
     color: black;
   }
 }
-
-
-.grayMarketInfoTips{
+h2 {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+.grayMarketInfoTips {
   // background-color: aqua;
-  h2{
-    font-size: x-large;
+  display: flex;
+  justify-content: space-around;
+
+  .rightSide {
+    // background-color: brown;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgb(120, 118, 246);
   }
 }
-
-
-
-
-
-
-
-
-
 
 // .continer{
 //   display: flex;
@@ -623,7 +626,7 @@ body {
 //     justify-content: center;
 //     align-items: center;
 //     text-align: center;
-    
+
 //     // width: 76%;
 //     font-size: 23px;
 
