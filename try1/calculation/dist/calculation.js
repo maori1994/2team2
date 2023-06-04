@@ -145,7 +145,6 @@ function getUserInformation(ev) {
     catch (error) {
         console.log(error);
     }
-    // console.log(UserProfile,nameUser,lastName,phoneNumber,email)
 }
 function renderToUserInformation(userInformationArray) {
     var htmlOfInformation = userInformationArray
