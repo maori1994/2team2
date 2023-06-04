@@ -10,3 +10,4 @@ let hapoalim = document.querySelector(".hapoalim") as HTMLDivElement;
 let international = document.querySelector(".international") as HTMLDivElement;
 let israelPost = document.querySelector(".israelPost") as HTMLDivElement;
 let mercantil = document.querySelector(".mercantile") as HTMLDivElement;
+    
