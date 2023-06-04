@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./dist/calculation.js" defer></script>
-    <link rel="stylesheet" href="./dist/calculation.css">
+    <link rel="stylesheet" href="./dist/calculation.css" />
     <title>Document</title>
   </head>
   <body onload="renderToScrrim()">
-    <header>
-      <div class="logo">
+    <div class="title">
+      <div class="title__logo">
         <img src="../photo/LOGO-Y.R.M.png" alt="logo website - GRAY MARKET" />
       </div>
-      <div class="Contact-Us">צור קשר</div>
-      <div class="customers-recommend">לקוחות ממליצים</div>
-      <div class="Information-and-tips">מידע וטיפים</div>
-      <div class="about">אודות</div>
-      <div class="main">ראשי</div>
-    </header>
+      <div id="ContactUs" class="title__Contact-Us"><a href="#up">צור קשר</a></div>
+      <div class="title__Information-and-tips"><a href="#down">מידע וטיפים</a></div>
+      <div class="title__about"><a href="#center">אודות</a></div>
+      <div class="title__main">ראשי</div>
+    </div>
 
     <div class="background-list-2">
-      <h1>GRAY MARKET</h1>
+      <div class="heading1">
+        <h1>GRAY MARKET</h1>
+      </div>
       <div class="list-num2">
-        <div class="get-loan">בחר מהיכן לקבל את הלוואה</div>
-        <div class="much-month">?לכמה חודשים</div>
-        <div class="money-need">?כמה כסף אתה צריך</div>
+        <div class="list-num2__get-loan">בחר מהיכן לקבל את הלוואה</div>
+        <div class="list-num2__much-month">?לכמה חודשים</div>
+        <div class="list-num2__money-need">?כמה כסף אתה צריך</div>
       </div>
     </div>
     <form onsubmit="getDateForm(event)">
@@ -34,13 +35,12 @@
       <br />
       <br />
       <input class="manyMonths" type="text" name="manyMonths" />
-      <label for="manyMonths">?לכמה שנים</label>
+      <label class="" for="manyMonths">?לכמה שנים</label>
       <br />
       <br />
       <input class="submit" type="submit" value="שלח פריטים כאן" />
     </form>
     <div class="renderDate"></div>
-
 
     <div class="bankYahv"></div>
     <div class="laomi"></div>
@@ -50,51 +50,162 @@
     <div class="israelPost"></div>
     <div class="mercantile"></div>
 
-
-
-
-
-
-
-
-
-
     <!-- form number 1 -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <form onsubmit="getUserInformation(event)">
-      <input class="UserProfile" type="text" name="UserProfile">
-      <label for="UserProfile">פרופיל משתמש</label>
-      <br>
-      <br>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <form class="form2UserProfile" onsubmit="getUserInformation(event)">
+      <input class="nameUser" type="text" name="nameUser" />
+      <label for="nameUser">שם מלא:</label>
+      <br />
+      <br />
 
-      <input class="nameUser" type="text" name="nameUser">
-      <label for="nameUser">שם פרטי</label>
-      <br>
-      <br>
+      <input class="phoneNumber" type="text" name="phoneNumber" />
+      <label for="phoneNumber">טל' ליצירת קשר</label>
+      <br />
+      <br />
 
-      <input class="lastName" type="text" name="lastName">
-      <label for="lastName">שם משפחה</label>
-      <br>
-      <br>
-
-      <input class="phoneNumber" type="text" name="phoneNumber">
-      <label for="phoneNumber">מספר פלאפון</label>  
-      <br>
-      <br>
-
-      <input class="email" type="text" name="email">
+      <input class="email" type="text" name="email" />
       <label for="email">אימייל</label>
-      <br>
-      <br>
-      <br>
-      
-      <input class="submitOfForm2" type="submit" value="שליחת פריטים אישים ">
+      <br />
+      <br />
+      <br />
+
+      <input
+        class="submitOfForm2"
+        type="submit"
+        value="ליצירת קשר עם הבנק השאר פרטים"
+      />
     </form>
     <div class="renderInformation"></div>
+    <div class="line"></div>
+
+    <h2>מידע וטיפים</h2>
+    <div class="grayMarketInfoTips">
+      <p id="down" class="grayMarketInfoTips__leftSide" dir="rtl">
+        <strong>סוגי משכנתאות</strong> <br />
+        <br />
+        קיימים סוגים שונים ורבים של משכנתאות לכן רבים מתקשים <br />
+        להבין איזה משכנתא מתאימה להם ועונה על הצרכים
+        <br />
+        הייחודיים שלהם. משכנתא לוקחים לתקופה <br />
+        ארוכה לכן יש להתחייב להחזרים חודשיים קבועים <br />
+        או משתנים לתקופה ארוכה, בתקופה זו דברים רבים עשויים להשתנות, <br />
+        למשל הרחבת המשפחה, קידום בעבודה, אבטלה וכיוצא בזה. <br />
+        <br />
+        <br />
+        <strong>משכנתא צמודת מדד – </strong><br />
+        ההלוואה צמודה למדד המחירים לצרכן, ההחזר החודשי מתעדכן מדי חודש <br />
+        בהתאם לשינויים במדד. יש מספר מסלולי משכנתא צמודת מדד, ביניהם משכנתא
+        צמודת מדד בריבית <br />
+        קבועה, משכנתא צמודה למדד בריבית משתנה ומשכנתא צמודה למדד בריבית חצי
+        קבועה. <br />
+        <br />
+        <br />
+        <strong>משכנתא לא צמודה למדד –</strong> <br />
+
+        ההלוואה אינה צמודה למדד המחירים לצרכן או למטבע אחר, יש מספר <br />
+        מסלולים כגון משכנתא לא צמודה בריבית פריים, משכנתא בריבית <br />
+        קבועה ללא הצמדה, משכנתא בריבית משתנה על בסיס עוגן אג"ח לא צמוד.
+        <br /><br />
+        <br />
+        <strong>משכנתא צמודה לדולר או לאירו –</strong> <br />
+
+        משכנתא שקלית בריבית משתנה, הריבית משתנה בהתאם לשינויים <br />
+        בריבית הליבור ומתעדכנת אחת לתקופה (3 או 6 חודשים). <br />
+        <br />
+        <br />
+        <strong>משכנתא צמודת מט"ח –</strong> <br />
+        משכנתא בריבית משתנה צמודה לשינויים בשער הדולר, האירו או מטבע חוץ <br />
+        אחר. יש להחזיר את התשלומים במטבע חוץ. <br />
+        <br />
+        <br />
+        <strong>משכנתא לזכאים –</strong> <br />
+        משכנתא בתנאי זכאות לבעלת תעודת זכאות ממשרד הבינוי והשיכון. <br />
+        <br />
+        <br />
+        <br />
+       </p>
+      <p class="grayMarketInfoTips__rightSide" dir="rtl">
+        <strong> מהי משכנתא קבועה לא צמודה? </strong>
+        <br />
+        <br />
+        משכנתא בריבית קבועה לא צמודה מאפשרת ללווים לדעת <br />
+        מראש מה יהיה גובה התשלומים שהם ישלמו מידי חודש <br />
+        מבלי לדאוג לשינויים המתרחשים בכלכלה וללא תלות <br />
+        במשתנים פיננסיים שונים. היא מאפשרת ביטחון לטווח ארוך <br />
+        ובגלל היציבות שהמסלול נותן, הריבית בו גבוהה יותר מאשר <br />
+        הריבית של מסלולי משכנתא אחרים<br />
+        <br />
+        <br />
+        <strong
+          >מהו ההבדל בין משכנתא קבועה לא צמודה ומשכנתא צמודה למדד?
+        </strong>
+        <br />
+        הריבית של משכנתא צמודה למדד, ככלל היא נמוכה יותר <br />
+        מאשר הריבית של משכנתא לא צמודה. זאת בגלל שרוב <br />
+        השנים המדד עולה, ועלייה הדרגתית זו היא מדיניות <br />
+        מוצהרת של הממשלה – מה שקרוי "יעד האינפלציה". <br />
+        כלומר, הריבית במסגרת מסלול משכנתא צמודה למדד תגדל בוודאות לאורך זמן.
+        <br />
+        <br />
+
+        עם זאת, כאשר הריבית במשק היא נמוכה, אז ההפרש בין <br />
+        ריבית משכנתא צמודה למדד וריבית משכנתא קבועה לא <br />
+        צמודה הופך להיות לקטן יותר ואנשים רבים יותר בוחרים <br />
+        בביטחון שבמשכנתא הקבועה. באמצעות מחשבון משכנתא <br />
+        ריבית קבועה לא צמודה ניתן לראות שההבדל בין הסכומים <br />
+        בתשלומים החודשיים הופך להיות קטן יותר ומשכנתא <br />
+        צמודת מדד הופכת להיות פחות משתלמת. <br />
+        <br />
+        <br />
+        <strong>שאלת העדיפות חשובה ביותר</strong>
+        <br />
+        ידוע כי שיעורי הריבית על המשכנתאות משתנים מתקופה <br />
+        לתקופה, תלויים בגורמים רבים, ועשויים להגיע לרמות שפל <br />
+        כמו גם להאמיר. לכן בכל מעמד של לקיחת משכנתא עולה <br />
+        מיד השאלה מה עדיף – לקבע כעת את גובה הריבית לכל <br />
+        תקופת התשלומים, הווה אומר ריבית קבועה, או שמא לבחור <br />
+        בריבית משתנה, בה נקבעות מראש תקופות במהלך חיי <br />
+        המשכנתא בהם קובעים ריבית לתקופה. <br />
+        <br />
+
+        הבחירה תלויה בגובה הריבית באותו זמן נתון, שכן היא עשויה <br />
+        להילקח בתקופה של שפל חסר תקדים ולכן יהיה משתלם <br />
+       </p>
+    </div>
+    <div class="line"></div>
+    <div class="titleAboutParg">
+      <div id="center" class="titleAboutParg__ContactUs">gray market צור קשר</div>
+      <div class="titleAboutParg__aboutUs">gray market אודות</div>
+    </div>
+    <div class="phone" dir="rtl">טל':050-123456789</div>
+
+    <div class="contactTime">
+      <p class="contactTime__paragraphPhone" dir="rtl">
+        שעות פעילות: ימים ראשון - חמישי בין השעות 14:45 ועד השעה רבע לשלוש
+        (בלבד)
+        <br />
+        <br id="up" />
+        כתובת: שומקום 666, פינת "אינפהכלום" (מעל הרצחניה - לא צרכניה) - יקנעם
+        עילית
+      </p>
+      <p class="contactTime__paragraphDate" dir="rtl">
+        GRAY MARKET הוקמה בשנת 2012 וכל שאר היסטוריה. <br />
+        <br />
+        מאז אנו שמחים להציע מגוון הלוואות לכל מטרה (אנחנו לא שואלים שאלות).
+        <br /><br />
+        אנו עושים גם פעולות נוספות כמו: נכיון צ'קים, המרות ורכישות של מטבע חוץ,
+        ועוד...
+      </p>
+    </div>
+    <div class="linkContactUs">
+      <div class="linkContactUs__ContactUsOfLink">
+        <a href="#ContactUs">להעלות לדף הראשי</a>
+      </div>
+    </div>
   </body>
 </html>

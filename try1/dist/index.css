@@ -1,8 +1,9 @@
 body {
   font-family: sans-serif;
+  background-color: rgba(8, 6, 14, 0.158);
 }
 
-header {
+.title {
   display: flex;
   width: 100%;
   height: 100px;
@@ -11,7 +12,7 @@ header {
   align-items: center;
   text-align: center;
 }
-header .logo {
+.title__logo {
   width: 30%;
   height: 165px;
   padding-top: 35px;
@@ -19,16 +20,15 @@ header .logo {
   margin-left: 40px;
   padding-top: 25px;
 }
-header .logo img {
-  width: 193px;
+.title__logo img {
+  width: 230px;
   height: 140px;
   padding-top: -5px;
 }
-header .Contact-Us {
+.title__Contact-Us {
   width: 200px;
   height: 70px;
   background-color: white;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -36,11 +36,14 @@ header .Contact-Us {
   margin-right: 20px;
   align-items: center;
 }
-header .customers-recommend {
+.title__Contact-Us a {
+  text-decoration: none;
+  color: black;
+}
+.title__customers-recommend {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -48,11 +51,10 @@ header .customers-recommend {
   margin-right: 20px;
   align-items: center;
 }
-header .Information-and-tips {
+.title__Information-and-tips {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -60,11 +62,14 @@ header .Information-and-tips {
   margin-right: 20px;
   align-items: center;
 }
-header .about {
+.title__Information-and-tips a {
+  text-decoration: none;
+  color: black;
+}
+.title__about {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -72,11 +77,14 @@ header .about {
   margin-right: 20px;
   align-items: center;
 }
-header .main {
+.title__about a {
+  text-decoration: none;
+  color: black;
+}
+.title__main {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -86,11 +94,15 @@ header .main {
 }
 
 .background-list-2 {
-  background-color: #6abefd;
+  background-image: url(https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.background-list-2 h1 {
-  margin-left: 35%;
-  font-size: 3.2rem;
+.background-list-2 .heading1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 .background-list-2 .list-num2 {
   width: 100%;
@@ -99,10 +111,9 @@ header .main {
   justify-content: space-around;
   align-items: center;
 }
-.background-list-2 .list-num2 .money-need {
+.background-list-2 .list-num2__money-need {
   width: 200px;
   height: 80px;
-  /* background-color: #29f22c; */
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -110,11 +121,10 @@ header .main {
   justify-content: center;
   background-color: white;
 }
-.background-list-2 .list-num2 .much-month {
+.background-list-2 .list-num2__much-month {
   background-color: white;
   width: 200px;
   height: 80px;
-  /* background-color: #29f22c; */
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -122,11 +132,10 @@ header .main {
   text-align: center;
   justify-content: center;
 }
-.background-list-2 .list-num2 .get-loan {
+.background-list-2 .list-num2__get-loan {
   background-color: white;
   width: 200px;
   height: 80px;
-  /* background-color: #29f22c; */
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -135,58 +144,56 @@ header .main {
 }
 
 .moneyNeed {
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 75%;
+  border-radius: 10px;
 }
 
 .manyMonths {
   margin-left: 75%;
+  border-radius: 10px;
 }
 
 .submit {
-  margin-left: 43%;
+  margin-left: 74%;
   width: 270px;
   height: 69px;
   font-size: 1.5rem;
   border-radius: 50px;
-}
-
-.UserProfile {
-  margin-top: 2%;
-  margin-left: 75%;
+  margin-top: 20px;
 }
 
 .nameUser {
   margin-left: 75%;
-}
-
-.lastName {
-  margin-left: 75%;
+  border-radius: 10px;
 }
 
 .phoneNumber {
+  border-radius: 10px;
   margin-left: 75%;
 }
 
 .email {
+  border-radius: 10px;
   margin-left: 75%;
 }
 
 .submitOfForm2 {
-  margin-left: 43%;
-  width: 270px;
-  height: 69px;
+  margin-left: 71%;
+  width: 383px;
+  height: 78px;
+  margin-bottom: 3%;
   font-size: 1.5rem;
-  border-radius: 50px;
+  border-radius: 49px;
 }
 
-.LoanInformation {
+.form2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 8%;
-  margin-left: 355px;
+  margin-bottom: 3%;
+  margin-left: 30px;
   font-size: 1.5rem;
   border-style: solid;
   border-radius: 58px;
@@ -195,6 +202,45 @@ header .main {
   height: 13rem;
   font-family: sans-serif;
   background-color: silver;
+}
+.form2__styleOfInfoUserRender {
+  font-size: xx-large;
+  color: white;
+}
+.form2__renderNameUser {
+  font-size: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+.form2__renderPhoneNumber {
+  font-size: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+.form2__renderPhoneEmail {
+  font-size: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.LoanInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 535px;
+  font-size: 1.5rem;
+  border-style: solid;
+  border-radius: 58px;
+  border-width: 3px;
+  width: 48rem;
+  height: 13rem;
+  font-family: sans-serif;
+  background-color: silver;
+  position: absolute;
+  top: 470px;
+  left: -504px;
 }
 .LoanInformation__amountOfMoney {
   color: white;
@@ -210,6 +256,7 @@ header .main {
   border-radius: 30px;
   width: 20%;
   height: 40px;
+  margin-top: 10px;
 }
 
 .bankYahav {
@@ -219,10 +266,9 @@ header .main {
   flex-direction: column;
   text-align: center;
   margin-left: 21%;
-}
-.bankYahav h3 {
-  padding-left: 40%;
-  font-size: xx-large;
+  position: absolute;
+  left: -360px;
+  top: 803px;
 }
 .bankYahav img {
   width: 70%;
@@ -253,10 +299,9 @@ header .main {
   flex-direction: column;
   text-align: center;
   margin-left: 21%;
-}
-.bankLeumi h3 {
-  padding-left: 40%;
-  font-size: xx-large;
+  position: absolute;
+  left: -350px;
+  top: 861px;
 }
 .bankLeumi img {
   width: 58%;
@@ -288,14 +333,13 @@ header .main {
   flex-direction: column;
   text-align: center;
   margin-left: 21%;
-}
-.bankDiscud h3 {
-  padding-left: 40%;
-  font-size: xx-large;
+  position: absolute;
+  left: -340px;
+  top: 868px;
 }
 .bankDiscud img {
-  width: 350px;
-  height: 300px;
+  width: 500px;
+  height: 150px;
   padding-left: 13%;
   border-radius: 15px;
 }
@@ -323,14 +367,13 @@ header .main {
   flex-direction: column;
   text-align: center;
   margin-left: 21%;
-}
-.bankhapoalim h3 {
-  padding-left: 40%;
-  font-size: xx-large;
+  position: absolute;
+  left: -330px;
+  top: 844px;
 }
 .bankhapoalim img {
-  width: 350px;
-  height: 300px;
+  width: 538px;
+  height: 229px;
   padding-left: 13%;
   border-radius: 15px;
 }
@@ -358,10 +401,9 @@ header .main {
   flex-direction: column;
   text-align: center;
   margin-left: 21%;
-}
-.bankIsraelPost h3 {
-  padding-left: 40%;
-  font-size: xx-large;
+  position: absolute;
+  left: -330px;
+  top: 790px;
 }
 .bankIsraelPost img {
   width: 350px;
@@ -393,14 +435,13 @@ header .main {
   flex-direction: column;
   text-align: center;
   margin-left: 21%;
-}
-.bankmercantil h3 {
-  padding-left: 40%;
-  font-size: xx-large;
+  position: absolute;
+  left: -340px;
+  top: 820px;
 }
 .bankmercantil img {
-  width: 350px;
-  height: 300px;
+  width: 569px;
+  height: 251px;
   padding-left: 13%;
   border-radius: 15px;
 }
@@ -419,4 +460,79 @@ header .main {
 .bankmercantil__afterInterestbankmercantil {
   font-size: x-large;
   padding-left: 110px;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.titleAboutParg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titleAboutParg__aboutUs {
+  font-size: xx-large;
+  color: black;
+}
+.titleAboutParg__ContactUs {
+  font-size: xx-large;
+  color: black;
+}
+
+.phone {
+  display: flex;
+  justify-content: end;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+.contactTime {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.contactTime__paragraphPhone {
+  font-size: large;
+  color: black;
+}
+.contactTime__paragraphDate {
+  font-size: large;
+  color: black;
+}
+
+h2 {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.grayMarketInfoTips {
+  display: flex;
+  justify-content: space-around;
+}
+.grayMarketInfoTips__rightSide {
+  display: flex;
+  flex-direction: column;
+}
+.grayMarketInfoTips__leftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkContactUs {
+  display: flex;
+  justify-content: center;
+}
+.linkContactUs__ContactUsOfLink {
+  color: black;
+}
+.linkContactUs__ContactUsOfLink a {
+  text-decoration: none;
+  color: black;
 }
