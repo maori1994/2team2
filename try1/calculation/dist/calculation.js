@@ -150,7 +150,7 @@ function getUserInformation(ev) {
 function renderToUserInformation(userInformationArray) {
     var htmlOfInformation = userInformationArray
         .map(function (userInformation) {
-        return "<div class=\"form2\">\n      <div class=\"styleOfInfoUserRender\">:\u05D4\u05E4\u05E8\u05D8\u05D9\u05DD \u05D4\u05D1\u05D0\u05D9\u05DD \u05E0\u05E9\u05DC\u05D7\u05D5 \u05DC\u05D1\u05E0\u05E7</div>\n      <div class=\"renderNameUser\">" + userInformation.nameUser + "</div>\n      <div class=\"renderPhoneNumber\">" + userInformation.phoneNumbe + "</div>\n      <div class=\"renderPhoneEmail\">" + userInformation.email + "</div>\n      </div>\n      ";
+        return "<div class=\"form2\">\n      <div class=\"form2__styleOfInfoUserRender\">:\u05D4\u05E4\u05E8\u05D8\u05D9\u05DD \u05D4\u05D1\u05D0\u05D9\u05DD \u05E0\u05E9\u05DC\u05D7\u05D5 \u05DC\u05D1\u05E0\u05E7</div>\n      <div class=\"form2__renderNameUser\">" + userInformation.nameUser + "</div>\n      <div class=\"form2__renderPhoneNumber\">" + userInformation.phoneNumbe + "</div>\n      <div class=\"form2__renderPhoneEmail\">" + userInformation.email + "</div>\n      </div>\n      ";
     })
         .join(" ");
     return htmlOfInformation;

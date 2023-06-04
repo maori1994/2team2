@@ -29,7 +29,6 @@ body {
   width: 200px;
   height: 70px;
   background-color: white;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -45,7 +44,6 @@ body {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -57,19 +55,21 @@ body {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
   justify-content: center;
   margin-right: 20px;
   align-items: center;
+}
+.title__Information-and-tips a {
+  text-decoration: none;
+  color: black;
 }
 .title__about {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -77,11 +77,14 @@ body {
   margin-right: 20px;
   align-items: center;
 }
+.title__about a {
+  text-decoration: none;
+  color: black;
+}
 .title__main {
   background-color: white;
   width: 200px;
   height: 70px;
-  /* padding-top: 25px; */
   box-sizing: border-box;
   display: flex;
   border-style: solid;
@@ -108,10 +111,9 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.background-list-2 .list-num2 .money-need {
+.background-list-2 .list-num2__money-need {
   width: 200px;
   height: 80px;
-  /* background-color: #29f22c; */
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -119,11 +121,10 @@ body {
   justify-content: center;
   background-color: white;
 }
-.background-list-2 .list-num2 .much-month {
+.background-list-2 .list-num2__much-month {
   background-color: white;
   width: 200px;
   height: 80px;
-  /* background-color: #29f22c; */
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -131,11 +132,10 @@ body {
   text-align: center;
   justify-content: center;
 }
-.background-list-2 .list-num2 .get-loan {
+.background-list-2 .list-num2__get-loan {
   background-color: white;
   width: 200px;
   height: 80px;
-  /* background-color: #29f22c; */
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -193,7 +193,7 @@ body {
   justify-content: center;
   text-align: center;
   margin-bottom: 3%;
-  margin-left: 9px;
+  margin-left: 30px;
   font-size: 1.5rem;
   border-style: solid;
   border-radius: 58px;
@@ -203,21 +203,21 @@ body {
   font-family: sans-serif;
   background-color: silver;
 }
-.form2 .styleOfInfoUserRender {
+.form2__styleOfInfoUserRender {
   font-size: xx-large;
   color: white;
 }
-.form2 .renderNameUser {
+.form2__renderNameUser {
   font-size: 20px;
   color: white;
   font-size: 1.5rem;
 }
-.form2 .renderPhoneNumber {
+.form2__renderPhoneNumber {
   font-size: 20px;
   color: white;
   font-size: 1.5rem;
 }
-.form2 .renderPhoneEmail {
+.form2__renderPhoneEmail {
   font-size: 20px;
   color: white;
   font-size: 1.5rem;
@@ -267,7 +267,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -463px;
+  left: -360px;
   top: 803px;
 }
 .bankYahav img {
@@ -300,7 +300,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -438px;
+  left: -350px;
   top: 861px;
 }
 .bankLeumi img {
@@ -334,7 +334,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -425px;
+  left: -340px;
   top: 868px;
 }
 .bankDiscud img {
@@ -368,7 +368,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -435px;
+  left: -330px;
   top: 844px;
 }
 .bankhapoalim img {
@@ -402,8 +402,8 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -463px;
-  top: 828px;
+  left: -330px;
+  top: 790px;
 }
 .bankIsraelPost img {
   width: 350px;
@@ -436,8 +436,8 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -426px;
-  top: 842px;
+  left: -340px;
+  top: 820px;
 }
 .bankmercantil img {
   width: 569px;
@@ -516,11 +516,23 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
-.grayMarketInfoTips .rightSide {
+.grayMarketInfoTips__rightSide {
   display: flex;
   flex-direction: column;
 }
-.grayMarketInfoTips .leftSide {
+.grayMarketInfoTips__leftSide {
   display: flex;
   flex-direction: column;
+}
+
+.linkContactUs {
+  display: flex;
+  justify-content: center;
+}
+.linkContactUs__ContactUsOfLink {
+  color: black;
+}
+.linkContactUs__ContactUsOfLink a {
+  text-decoration: none;
+  color: black;
 }

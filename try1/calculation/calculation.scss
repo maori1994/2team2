@@ -7,19 +7,16 @@ body {
   width: 100%;
   height: 100px;
   background-color: silver;
-  // background-color: rgba(20, 63, 57, 0.383)ס
   justify-content: space-around;
   align-items: center;
   text-align: center;
   &__logo {
     width: 30%;
     height: 165px;
-    // background-color: aqua;
     padding-top: 35px;
     box-sizing: border-box;
     margin-left: 40px;
     padding-top: 25px;
-    // border-style: solid;
     img {
       width: 230px;
       height: 140px;
@@ -30,7 +27,6 @@ body {
     width: 200px;
     height: 70px;
     background-color: white;
-    /* padding-top: 25px; */
     box-sizing: border-box;
     display: flex;
     border-style: solid;
@@ -46,7 +42,6 @@ body {
     background-color: white;
     width: 200px;
     height: 70px;
-    /* padding-top: 25px; */
     box-sizing: border-box;
     display: flex;
     border-style: solid;
@@ -58,31 +53,36 @@ body {
     background-color: white;
     width: 200px;
     height: 70px;
-    /* padding-top: 25px; */
     box-sizing: border-box;
     display: flex;
     border-style: solid;
     justify-content: center;
     margin-right: 20px;
     align-items: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
   &__about {
     background-color: white;
     width: 200px;
     height: 70px;
-    /* padding-top: 25px; */
     box-sizing: border-box;
     display: flex;
     border-style: solid;
     justify-content: center;
     margin-right: 20px;
     align-items: center;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
   &__main {
     background-color: white;
     width: 200px;
     height: 70px;
-    /* padding-top: 25px; */
     box-sizing: border-box;
     display: flex;
     border-style: solid;
@@ -95,8 +95,6 @@ body {
   background-image: url(https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  //   background-color: #351e4b;
-  // height: 300px;
   .heading1 {
     font-size: 30px;
     display: flex;
@@ -109,10 +107,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .money-need {
+    &__money-need {
       width: 200px;
       height: 80px;
-      /* background-color: #29f22c; */
       display: flex;
       align-items: center;
       border-radius: 15px;
@@ -120,11 +117,10 @@ body {
       justify-content: center;
       background-color: white;
     }
-    .much-month {
+    &__much-month {
       background-color: white;
       width: 200px;
       height: 80px;
-      /* background-color: #29f22c; */
       display: flex;
       align-items: center;
       border-radius: 15px;
@@ -132,11 +128,10 @@ body {
       text-align: center;
       justify-content: center;
     }
-    .get-loan {
+    &__get-loan {
       background-color: white;
       width: 200px;
       height: 80px;
-      /* background-color: #29f22c; */
       display: flex;
       align-items: center;
       border-radius: 15px;
@@ -167,11 +162,7 @@ body {
 //---forms number 1--//
 
 //---forms number 2--//
-// .UserProfile {
-// background-color: aqua;
-
 .nameUser {
-  // margin-top: 2%;
   margin-left: 75%;
   border-radius: 10px;
 }
@@ -193,19 +184,12 @@ body {
 }
 //---render form 2---//
 .form2 {
-  // background-color: aqua;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // border-style: solid;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin-bottom: 3%;
-  margin-left: 9px;
+  margin-left: 30px;
   font-size: 1.5rem;
   border-style: solid;
   border-radius: 58px;
@@ -214,22 +198,21 @@ body {
   height: 13rem;
   font-family: sans-serif;
   background-color: silver;
-  .styleOfInfoUserRender {
+  &__styleOfInfoUserRender {
     font-size: xx-large;
     color: white;
-    // font-size: 1.5rem;
   }
-  .renderNameUser {
+  &__renderNameUser {
     font-size: 20px;
     color: white;
     font-size: 1.5rem;
   }
-  .renderPhoneNumber {
+  &__renderPhoneNumber {
     font-size: 20px;
     color: white;
     font-size: 1.5rem;
   }
-  .renderPhoneEmail {
+  &__renderPhoneEmail {
     font-size: 20px;
     color: white;
     font-size: 1.5rem;
@@ -260,32 +243,24 @@ body {
   position: absolute;
   top: 470px;
   left: -504px;
-  // border-style: solid;
   &__amountOfMoney {
     color: white;
-    // padding-left: 32%;
-    // padding-left: 230px;
   }
   &__amoumtOfYears {
-    // padding-left: 28%;
     color: white;
   }
   &__refundAmount {
-    // padding-left: 32%;
     color: white;
-    // padding-left: 70px;
   }
   &__buttonDelete {
-    // margin-left: 43%;
     font-size: 1.2rem;
     border-radius: 30px;
     width: 20%;
     height: 40px;
     margin-top: 10px;
-    // margin-left: 30%;
   }
 }
-// }
+
 //--Loan information--//
 
 //--information of banks--//
@@ -297,7 +272,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -463px;
+  left: -360px;
   top: 803px;
   img {
     width: 70%;
@@ -305,24 +280,18 @@ body {
     padding-left: 25%;
   }
   &__numberBankYahav {
-    // background-color: #ff1de5;
     font-size: x-large;
     padding-left: 13%;
   }
   &__contactYahav {
-    // background-color: rgb(76, 131, 249);
     font-size: x-large;
     padding-left: 13%;
   }
   &__beforeInterest {
-    // background-color: rgb(83, 255, 158);
     font-size: x-large;
-    // padding-left: 30%;
-    // padding-left: 175px;
     padding-left: 120px;
   }
   &__afterInterest {
-    // background-color: bisque;
     font-size: x-large;
     padding-left: 117px;
   }
@@ -335,7 +304,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -438px;
+  left: -350px;
   top: 861px;
   img {
     width: 58%;
@@ -352,14 +321,10 @@ body {
     padding-left: 13%;
   }
   &__beforeInterestLeumi {
-    // background-color: rgb(83, 255, 158);
     font-size: x-large;
-    // padding-left: 30%;
-    // padding-left: 175px;
     padding-left: 120px;
   }
   &__afterInterestLeumi {
-    // background-color: bisque;
     font-size: x-large;
     padding-left: 110px;
   }
@@ -372,7 +337,7 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -425px;
+  left: -340px;
   top: 868px;
   img {
     width: 500px;
@@ -389,14 +354,10 @@ body {
     padding-left: 13%;
   }
   &__beforeInterestDiscud {
-    // background-color: rgb(83, 255, 158);
     font-size: x-large;
-    // padding-left: 30%;
-    // padding-left: 175px;
     padding-left: 120px;
   }
   &__afterInterestDiscud {
-    // background-color: bisque;
     font-size: x-large;
     padding-left: 110px;
   }
@@ -409,11 +370,10 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -435px;
+  left: -330px;
   top: 844px;
 
   img {
-    // background-color: aqua;
     width: 538px;
     height: 229px;
     padding-left: 13%;
@@ -428,14 +388,10 @@ body {
     padding-left: 13%;
   }
   &__beforeInteresthapoalim {
-    // background-color: rgb(83, 255, 158);
     font-size: x-large;
-    // padding-left: 30%;
-    // padding-left: 175px;
     padding-left: 120px;
   }
   &__afterInteresthapoalim {
-    // background-color: bisque;
     font-size: x-large;
     padding-left: 110px;
   }
@@ -448,10 +404,9 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -463px;
-  top: 828px;
+  left: -330px;
+  top: 790px;
   img {
-    // background-color: aqua;
     width: 350px;
     height: 300px;
     padding-left: 13%;
@@ -466,10 +421,7 @@ body {
     padding-left: 13%;
   }
   &__beforeInterestIsraelPost {
-    // background-color: rgb(83, 255, 158);
     font-size: x-large;
-    // padding-left: 30%;
-    // padding-left: 175px;
     padding-left: 120px;
   }
   &__afterInterestIsraelPost {
@@ -485,10 +437,9 @@ body {
   text-align: center;
   margin-left: 21%;
   position: absolute;
-  left: -426px;
-  top: 842px;
+  left: -340px;
+  top: 820px;
   img {
-    // background-color: aqua;
     width: 569px;
     height: 251px;
     padding-left: 13%;
@@ -503,10 +454,7 @@ body {
     padding-left: 13%;
   }
   &__beforeInterestbankmercantil {
-    // background-color: rgb(83, 255, 158);
     font-size: x-large;
-    // padding-left: 30%;
-    // padding-left: 175px;
     padding-left: 120px;
   }
   &__afterInterestbankmercantil {
@@ -540,8 +488,6 @@ body {
 .phone {
   display: flex;
   justify-content: end;
-  // align-items: center;
-  // text-align: end;
   margin-left: 20%;
   margin-top: 20px;
 }
@@ -566,75 +512,25 @@ h2 {
   color: rgb(0, 0, 0);
 }
 .grayMarketInfoTips {
-  // background-color: aqua;
   display: flex;
   justify-content: space-around;
-
-  .rightSide {
-    // background-color: brown;
+  &__rightSide {
     display: flex;
     flex-direction: column;
   }
-  .leftSide {
+  &__leftSide {
     display: flex;
     flex-direction: column;
-    // background-color: rgb(120, 118, 246);
   }
 }
-
-// .continer{
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-
-//   .titleAboutParg {
-//     // position: absolute;
-//     // top: 125%;
-//     // left: -6%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     margin-left: 45%;
-//     color: black;
-//     font-size: 23px;
-//     background-color: aqua;
-//     h3 {
-//       margin-left: 685px;
-//     }
-//     margin-left: 45%;
-//     color: black;
-//     // font-size: 30px;
-//     p {
-//       margin-left: 358px;
-//       // display: flex;
-//       // justify-content: space-between;
-//       // align-content: center;
-//     }
-//   }
-//   .contactTime {
-//     // position: absolute;
-//     // top: 166%;
-//     // left: -33%;
-//     margin-left: 45%;
-//     color: black;
-//     font-size: 23px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-
-//     // width: 76%;
-//     font-size: 23px;
-
-//     h3 {
-//       padding-left: 67%;
-//     }
-//     p {
-//       padding-left: 550px;
-//     }
-//   }
-// }
+.linkContactUs{
+  display: flex;
+  justify-content: center;
+  &__ContactUsOfLink{
+    color: black;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

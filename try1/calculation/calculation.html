@@ -13,9 +13,9 @@
       <div class="title__logo">
         <img src="../photo/LOGO-Y.R.M.png" alt="logo website - GRAY MARKET" />
       </div>
-      <div class="title__Contact-Us"><a href="#up">צור קשר</a></div>
-      <div class="title__Information-and-tips">מידע וטיפים</div>
-      <div class="title__about">אודות</div>
+      <div id="ContactUs" class="title__Contact-Us"><a href="#up">צור קשר</a></div>
+      <div class="title__Information-and-tips"><a href="#down">מידע וטיפים</a></div>
+      <div class="title__about"><a href="#center">אודות</a></div>
       <div class="title__main">ראשי</div>
     </div>
 
@@ -24,9 +24,9 @@
         <h1>GRAY MARKET</h1>
       </div>
       <div class="list-num2">
-        <div class="get-loan">בחר מהיכן לקבל את הלוואה</div>
-        <div class="much-month">?לכמה חודשים</div>
-        <div class="money-need">?כמה כסף אתה צריך</div>
+        <div class="list-num2__get-loan">בחר מהיכן לקבל את הלוואה</div>
+        <div class="list-num2__much-month">?לכמה חודשים</div>
+        <div class="list-num2__money-need">?כמה כסף אתה צריך</div>
       </div>
     </div>
     <form onsubmit="getDateForm(event)">
@@ -85,7 +85,7 @@
 
     <h2>מידע וטיפים</h2>
     <div class="grayMarketInfoTips">
-      <p class="leftSide" dir="rtl">
+      <p id="down" class="grayMarketInfoTips__leftSide" dir="rtl">
         <strong>סוגי משכנתאות</strong> <br />
         <br />
         קיימים סוגים שונים ורבים של משכנתאות לכן רבים מתקשים <br />
@@ -143,7 +143,7 @@
         הפריים שבנוי מריבית בנק ישראל + <br />
         1.5%. מסלול זה הוא לא מסלול קבועה ותלוי בשינוי הריבית של בנק ישראל -->
       </p>
-      <p class="rightSide" dir="rtl">
+      <p class="grayMarketInfoTips__rightSide" dir="rtl">
         <strong> מהי משכנתא קבועה לא צמודה? </strong>
         <br />
         <br />
@@ -216,7 +216,7 @@
     </div>
     <div class="line"></div>
     <div class="titleAboutParg">
-      <div class="titleAboutParg__ContactUs">gray market צור קשר</div>
+      <div id="center" class="titleAboutParg__ContactUs">gray market צור קשר</div>
       <div class="titleAboutParg__aboutUs">gray market אודות</div>
     </div>
     <div class="phone" dir="rtl">טל':050-123456789</div>
@@ -238,6 +238,11 @@
         אנו עושים גם פעולות נוספות כמו: נכיון צ'קים, המרות ורכישות של מטבע חוץ,
         ועוד...
       </p>
+    </div>
+    <div class="linkContactUs">
+      <div class="linkContactUs__ContactUsOfLink">
+        <a href="#ContactUs">להעלות לדף הראשי</a>
+      </div>
     </div>
   </body>
 </html>
